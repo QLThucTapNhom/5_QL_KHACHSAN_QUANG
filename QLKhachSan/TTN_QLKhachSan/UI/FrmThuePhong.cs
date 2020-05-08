@@ -43,38 +43,21 @@ namespace TTN_QLKhachSan.UI
                 string cmnd = comboBoxcmt.Text.Trim();
                 string makh = txtMaKH.Text.Trim();
                 string phong = cbbMaPhong.Text.Trim();
-                string Nthue = dtpNgayThue.Value.ToShortDateString();
-                string loai = "0";
-                if (radioButtongio1.Checked)
-                {
-                    loai = "1";
-                }
-                if (radioButtonngay.Checked)
-                {
-                    loai = "2"; 
-                }
-                if (!radioButtongio1.Checked && !radioButtonngay.Checked) 
-                {
-                    MessageBox.Show("Bạn muốn thuê theo Ngày hay theo Giờ!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                }
-                else
-                {
-                    if (cmnd.Length != 0)
+                string Nthue = dtpNgayThue.Value.ToString();
+                
+                if (cmnd.Length != 0)
                     {
-                        string insert = "insert into PHIEUTHUEPHONG(MaKH, MaPhong, NgayNhanPhong, LoaiThue) values(N'" + makh + "', N'" + phong + "', N'" + Nthue + "', N'" + loai + "')";
+                        string insert = "insert into PHIEUTHUEPHONG(MaKH, MaPhong, NgayNhanPhong) values(N'" + makh + "', N'" + phong + "', N'" + Nthue + "')";
                         database.ThucThiKetNoi(insert);
                         string update = "update PHONG set TrangThai = N'Thuê' where MaPhong = '" + phong + "'";
                         database.ThucThiKetNoi(update);
                         MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         database.loadDataGridView(dgvThuePhong, "select * from PHIEUTHUEPHONG");
-                    }
-                }
-                
-
+                    }                            
             }
             catch
             {
-                MessageBox.Show("Vui lòng nhập đủ thông tin khách hàng!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show("Vui lòng chọn số CMND của khách hàng!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             
         }

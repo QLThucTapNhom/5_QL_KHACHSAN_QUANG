@@ -1,6 +1,6 @@
-﻿CREATE DATABASE QLKHACHSANN
+﻿CREATE DATABASE QLKHACHSAN
 
-USE QLKHACHSANN
+USE QLKHACHSAN
 
 
 CREATE TABLE QUYEN(
@@ -88,27 +88,17 @@ CREATE TABLE HOADON(
 	   MaKH int references KHACHHANG(MaKH),
 	   MaNV nvarchar(20) references NHANVIEN(MaNV),
 	   NgayLap datetime,
-	   TongTien money
-)
-CREATE TABLE CHITIETHD(
-       MaHD INT REFERENCES HOADON (MaHD),
-	   MaPhong nvarchar(20) references PHONG(MaPhong),
-	   PRIMARY key(MaHD,MaPhong),
-	   GiamGia REAL,
 	   NgayNhan DATETIME,
 	   NgayTra DATETIME,
-	   SoNgay INT,
-	   SoGio INT,
-	   ThanhTien money
+	   TienDV money,
+	   TongTien money
 )
-
 CREATE TABLE PHIEUTHUEPHONG
 (
      MaPhieu INT IDENTITY primary key,
 	 MaKH INT references KHACHHANG(MaKH),
 	 MaPhong nvarchar(20) references PHONG(MaPhong),
 	 NgayNhanPhong datetime,
-	 LoaiThue INT, --1, theo giờ, 2- theo ngày
 	 )
 
 
@@ -116,12 +106,9 @@ INSERT INTO QUYEN Values(1,N'Quản Lý'),
                          (2,N'Lễ Tân')
 
 INSERT INTO NHANVIEN Values('1',N'Đồng Văn Hùng','17150123','1999/08/20','Nam','0983467832',N'Hà Nội',N'Quản Lý')
-INSERT INTO NHANVIEN Values('2',N'Trần Thị PHương','17150173','1999/08/10','Nữ','0983467831',N'Hà Nội',N'Lễ Tân')
-INSERT INTO NHANVIEN Values('3',N'Quang','171503','1999/08/20','Nam','098346782',N'Hà Nội',N'Quản Lý')
 
-INSERT INTO TAIKHOAN VALUES('hung','123',1,'1')    
+INSERT INTO TAIKHOAN VALUES('admin','123',1,'1')    
 INSERT INTO TAIKHOAN VALUES('quang','123',1,'1') 
-INSERT INTO TAIKHOAN VALUES('phuong','123',2,'2') 
                    
 INSERT INTO KHACHHANG VALUES (N'Nguyễn Mạnh Quang','12345','0353485333')		
 
@@ -154,13 +141,13 @@ INSERT INTO THIETBI_SD VALUES ('P01','TB01',1,N'Tốt'),
 							  ('P01','TB04',1,N'Tốt')
                                                       
 
-INSERT INTO PHIEUTHUEPHONG VALUES('1','P01','2020/05/05 8:00:00',1) 
+INSERT INTO PHIEUTHUEPHONG VALUES('1','P01','2020/05/05 8:00:00') 
 
 
 INSERT INTO DICHVU_SD VALUES ('P01','DV01',1)
 INSERT INTO DICHVU_SD VALUES ('P01','DV02',3)
 
-INSERT INTO HOADON VALUES('1','1','2020/05/05 9:00:00',850000)    
-INSERT INTO CHITIETHD VALUES('2','P01','0','2020/05/05 9:00:00','2020/05/05 9:00:00',1,5,8000)
+INSERT INTO HOADON VALUES('1','1','2020/05/07 9:00:00','2020/05/05 9:00:00','2020/05/07 9:00:00',200000,850000)  
+
 
 
