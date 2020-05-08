@@ -100,6 +100,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Xóa DV";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // nudSoLuong
             // 
@@ -126,6 +127,7 @@
             this.btnThem.TabIndex = 1;
             this.btnThem.Text = "Thêm DV";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label5
             // 

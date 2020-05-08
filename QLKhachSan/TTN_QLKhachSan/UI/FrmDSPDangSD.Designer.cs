@@ -61,6 +61,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmDSPDangSD";
             this.Text = "FrmDSPDangSD";
+            this.Load += new System.EventHandler(this.FrmDSPDangSD_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

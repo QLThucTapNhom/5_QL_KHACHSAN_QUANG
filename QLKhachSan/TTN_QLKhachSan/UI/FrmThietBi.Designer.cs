@@ -30,11 +30,13 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtTenDV = new System.Windows.Forms.TextBox();
+            this.txtTenTB = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbbMaDV = new System.Windows.Forms.ComboBox();
+            this.cbbMaTB = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvDichVu = new System.Windows.Forms.DataGridView();
@@ -42,14 +44,15 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbbMaPhong = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cbbTTtb = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.nudsl = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDichVu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTin)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudsl)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -70,20 +73,42 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.nudsl);
+            this.groupBox4.Controls.Add(this.label7);
+            this.groupBox4.Controls.Add(this.cbbTTtb);
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.textBox1);
             this.groupBox4.Controls.Add(this.btnThem);
             this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.txtTenDV);
+            this.groupBox4.Controls.Add(this.txtTenTB);
             this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Controls.Add(this.cbbMaDV);
+            this.groupBox4.Controls.Add(this.cbbMaTB);
             this.groupBox4.Location = new System.Drawing.Point(12, 268);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(778, 100);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thêm thiết bị";
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.button1.Location = new System.Drawing.Point(679, 57);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 26);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Xóa";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(520, 41);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 19);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "TT TB";
             // 
             // btnThem
             // 
@@ -92,26 +117,27 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(93, 26);
             this.btnThem.TabIndex = 1;
-            this.btnThem.Text = "Thêm";
+            this.btnThem.Text = "Cập nhật";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(246, 40);
+            this.label5.Location = new System.Drawing.Point(201, 40);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 19);
             this.label5.TabIndex = 3;
             this.label5.Text = "Tên TB";
             // 
-            // txtTenDV
+            // txtTenTB
             // 
-            this.txtTenDV.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txtTenDV.Location = new System.Drawing.Point(307, 36);
-            this.txtTenDV.Name = "txtTenDV";
-            this.txtTenDV.ReadOnly = true;
-            this.txtTenDV.Size = new System.Drawing.Size(125, 26);
-            this.txtTenDV.TabIndex = 2;
+            this.txtTenTB.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtTenTB.Location = new System.Drawing.Point(262, 36);
+            this.txtTenTB.Name = "txtTenTB";
+            this.txtTenTB.ReadOnly = true;
+            this.txtTenTB.Size = new System.Drawing.Size(85, 26);
+            this.txtTenTB.TabIndex = 2;
             // 
             // label4
             // 
@@ -122,13 +148,14 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Mã TB";
             // 
-            // cbbMaDV
+            // cbbMaTB
             // 
-            this.cbbMaDV.FormattingEnabled = true;
-            this.cbbMaDV.Location = new System.Drawing.Point(94, 36);
-            this.cbbMaDV.Name = "cbbMaDV";
-            this.cbbMaDV.Size = new System.Drawing.Size(125, 27);
-            this.cbbMaDV.TabIndex = 0;
+            this.cbbMaTB.FormattingEnabled = true;
+            this.cbbMaTB.Location = new System.Drawing.Point(83, 36);
+            this.cbbMaTB.Name = "cbbMaTB";
+            this.cbbMaTB.Size = new System.Drawing.Size(85, 27);
+            this.cbbMaTB.TabIndex = 0;
+            this.cbbMaTB.SelectedIndexChanged += new System.EventHandler(this.cbbMaDV_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -181,6 +208,7 @@
             this.cbbMaPhong.Name = "cbbMaPhong";
             this.cbbMaPhong.Size = new System.Drawing.Size(626, 27);
             this.cbbMaPhong.TabIndex = 1;
+            this.cbbMaPhong.SelectedIndexChanged += new System.EventHandler(this.cbbMaPhong_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -191,33 +219,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Phòng";
             // 
-            // textBox1
+            // cbbTTtb
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox1.Location = new System.Drawing.Point(528, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(125, 26);
-            this.textBox1.TabIndex = 4;
+            this.cbbTTtb.FormattingEnabled = true;
+            this.cbbTTtb.Items.AddRange(new object[] {
+            "Tốt",
+            "Hỏng"});
+            this.cbbTTtb.Location = new System.Drawing.Point(576, 36);
+            this.cbbTTtb.Name = "cbbTTtb";
+            this.cbbTTtb.Size = new System.Drawing.Size(85, 27);
+            this.cbbTTtb.TabIndex = 7;
             // 
-            // label6
+            // label7
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(459, 41);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 19);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "TT TB";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(381, 41);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 19);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "SL";
             // 
-            // button1
+            // nudsl
             // 
-            this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Location = new System.Drawing.Point(679, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 26);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Xóa";
-            this.button1.UseVisualStyleBackColor = true;
+            this.nudsl.Location = new System.Drawing.Point(409, 36);
+            this.nudsl.Name = "nudsl";
+            this.nudsl.Size = new System.Drawing.Size(85, 26);
+            this.nudsl.TabIndex = 9;
             // 
             // FrmThietBi
             // 
@@ -227,6 +254,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmThietBi";
             this.Text = "FrmThietBi";
+            this.Load += new System.EventHandler(this.FrmThietBi_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -235,6 +263,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTin)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudsl)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -245,9 +274,9 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTenDV;
+        private System.Windows.Forms.TextBox txtTenTB;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbbMaDV;
+        private System.Windows.Forms.ComboBox cbbMaTB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvDichVu;
@@ -256,7 +285,9 @@
         private System.Windows.Forms.ComboBox cbbMaPhong;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cbbTTtb;
+        private System.Windows.Forms.NumericUpDown nudsl;
+        private System.Windows.Forms.Label label7;
     }
 }
