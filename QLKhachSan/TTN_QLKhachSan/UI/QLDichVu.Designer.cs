@@ -114,7 +114,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(653, 30);
+            this.textBox3.Location = new System.Drawing.Point(658, 33);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(134, 25);
@@ -131,7 +131,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(403, 30);
+            this.textBox2.Location = new System.Drawing.Point(405, 33);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(134, 25);
@@ -140,7 +140,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(302, 33);
+            this.label2.Location = new System.Drawing.Point(296, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 19);
             this.label2.TabIndex = 2;

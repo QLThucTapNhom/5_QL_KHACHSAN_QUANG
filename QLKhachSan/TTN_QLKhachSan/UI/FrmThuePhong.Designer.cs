@@ -137,7 +137,7 @@
             // 
             // dtpNgayThue
             // 
-            this.dtpNgayThue.CustomFormat = "mm dd yyyy hh:mm:ss tt";
+            this.dtpNgayThue.CustomFormat = "dd MM yyyy hh:mm:ss tt";
             this.dtpNgayThue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayThue.Location = new System.Drawing.Point(148, 185);
             this.dtpNgayThue.Name = "dtpNgayThue";

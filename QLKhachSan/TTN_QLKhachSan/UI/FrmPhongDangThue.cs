@@ -24,7 +24,12 @@ namespace TTN_QLKhachSan.UI
             FrmThanhToan th = new FrmThanhToan();
             th.Show();
         }
-
+        public void Reset()
+        {
+            cbbMaDV.Text = "";
+            txtTenDV.Text = "";
+            nudSoLuong.Value = 0;
+        }
         private void cbbMaPhong_SelectedIndexChanged(object sender, EventArgs e)
         {
             string temp = cbbMaPhong.SelectedItem.ToString();
@@ -75,6 +80,7 @@ namespace TTN_QLKhachSan.UI
                         database.loadDataGridView(dgvDichVu, "select dv.MaDV, dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV = dv.MaDV  and sd.Maphong = N'" + phong + "'");
 
                     }
+                    Reset();
                 }
                 else
                 {
@@ -109,6 +115,7 @@ namespace TTN_QLKhachSan.UI
                     {
                         MessageBox.Show("Phòng chưa sử dụng dịch vụ này!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     }
+                    Reset();
                 }              
                 else
                 {

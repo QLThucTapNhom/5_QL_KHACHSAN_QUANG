@@ -31,7 +31,7 @@ CREATE TABLE TAIKHOAN
 	 MaQuyen INT REFERENCES QUYEN(MaQuyen),
 	 MaNV NVARCHAR(20) REFERENCES NHANVIEN(MaNV)
 )
-
+ 
 
 CREATE TABLE KHACHHANG(
        MaKH INT IDENTITY primary key,
@@ -86,6 +86,7 @@ CREATE TABLE DICHVU_SD(
 CREATE TABLE HOADON(
        MaHD INT IDENTITY primary key,
 	   MaKH int references KHACHHANG(MaKH),
+	   MaPhong nvarchar(20) references PHONG(MaPhong),
 	   MaNV nvarchar(20) references NHANVIEN(MaNV),
 	   NgayLap datetime,
 	   NgayNhan DATETIME,
@@ -108,7 +109,6 @@ INSERT INTO QUYEN Values(1,N'Quản Lý'),
 INSERT INTO NHANVIEN Values('1',N'Đồng Văn Hùng','17150123','1999/08/20','Nam','0983467832',N'Hà Nội',N'Quản Lý')
 
 INSERT INTO TAIKHOAN VALUES('admin','123',1,'1')    
-INSERT INTO TAIKHOAN VALUES('quang','123',1,'1') 
                    
 INSERT INTO KHACHHANG VALUES (N'Nguyễn Mạnh Quang','12345','0353485333')		
 
@@ -120,10 +120,10 @@ INSERT INTO LOAIPHONG VALUES ('2',N'Phòng 2 người',150000,5000000,2),
 INSERT INTO PHONG VALUES  ('P01','P101','1',N'Thuê'),
                           ('P02','P102','1',N'Trống'),
 						  ('P03','P103','4',N'Trống'),
-						  ('P04','P104','4',N'Trống'),
+						  ('P04','P104','3',N'Trống'),
 						  ('P05','P201','2',N'Trống'),
 						  ('P06','P202','2',N'Trống'),
-						  ('P07','P203','2',N'Trống'),
+						  ('P07','P203','3',N'Trống'),
 						  ('P08','P204','4',N'Trống'),
 						  ('P09','P301','4',N'Trống')
 INSERT INTO DICHVU VALUES ('DV01',N'Mỳ gói',5000),
@@ -147,7 +147,12 @@ INSERT INTO PHIEUTHUEPHONG VALUES('1','P01','2020/05/05 8:00:00')
 INSERT INTO DICHVU_SD VALUES ('P01','DV01',1)
 INSERT INTO DICHVU_SD VALUES ('P01','DV02',3)
 
+<<<<<<< HEAD
 INSERT INTO HOADON VALUES('1','1','2020/05/07 9:00:00','2020/05/05 9:00:00','2020/05/07 9:00:00',200000,850000)  
 
 
 --"SELECT*FROM dbo.NHANVIEN WHERE  MaNV like'%"+"+%' OR HoTenNV LIKE '%"++"%' OR CMND LIKE '%"++"%'OR SDT LIKE '%"++"%'OR HoTenNV LIKE '%"++"%'OR DiaChi LIKE '%"++"%'OR ChucVu LIKE '%"++"%'"
+=======
+INSERT INTO HOADON VALUES('1','P01','1','2020/05/07 9:00:00','2020/05/05 9:00:00','2020/05/07 9:00:00',200000,850000)  
+
+>>>>>>> ee35ca4cf6b61d380626083b87af9576f4fc387a

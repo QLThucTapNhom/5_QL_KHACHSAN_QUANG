@@ -23,7 +23,6 @@ namespace TTN_QLKhachSan.UI
         {
             string temp = cbbMaNV.SelectedItem.ToString();
             database.loadTextBox(txtTenNV, "select HoTenNV from NHANVIEN where MaNV = N'" + temp + "'");
-
             bool check = database.Check(temp, "select MaNV from TAIKHOAN");
             if (check == true)
             {
@@ -121,6 +120,11 @@ namespace TTN_QLKhachSan.UI
                 MessageBox.Show("Không thể xóa! ","", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
            
+        }
+
+        private void txtTenNV_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
