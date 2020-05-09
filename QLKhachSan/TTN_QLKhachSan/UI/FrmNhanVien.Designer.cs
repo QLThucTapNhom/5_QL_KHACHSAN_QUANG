@@ -55,6 +55,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnLammoi = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -83,9 +84,12 @@
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.Size = new System.Drawing.Size(793, 104);
             this.dgvNhanVien.TabIndex = 7;
+            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvNhanVien_CellClick);
+            this.dgvNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvNhanVien_CellContentClick);
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.btnLammoi);
             this.groupBox4.Controls.Add(this.btnXoa);
             this.groupBox4.Controls.Add(this.btnSua);
             this.groupBox4.Controls.Add(this.btnThem);
@@ -98,32 +102,35 @@
             // btnXoa
             // 
             this.btnXoa.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnXoa.Location = new System.Drawing.Point(464, 25);
+            this.btnXoa.Location = new System.Drawing.Point(548, 25);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 32);
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.BtnXoa_Click);
             // 
             // btnSua
             // 
             this.btnSua.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSua.Location = new System.Drawing.Point(332, 25);
+            this.btnSua.Location = new System.Drawing.Point(416, 25);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 32);
             this.btnSua.TabIndex = 1;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.BtnSua_Click);
             // 
             // btnThem
             // 
             this.btnThem.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnThem.Location = new System.Drawing.Point(208, 25);
+            this.btnThem.Location = new System.Drawing.Point(292, 25);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 32);
             this.btnThem.TabIndex = 0;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.BtnThem_Click);
             // 
             // groupBox3
             // 
@@ -145,10 +152,11 @@
             this.btnTimKiem.TabIndex = 2;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.BtnTimKiem_Click);
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(157, 14);
+            this.txtTimKiem.Location = new System.Drawing.Point(161, 17);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(462, 26);
             this.txtTimKiem.TabIndex = 1;
@@ -188,6 +196,7 @@
             // 
             // dtpNgaySinh
             // 
+            this.dtpNgaySinh.CustomFormat = "dd-MM-yyyy";
             this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgaySinh.Location = new System.Drawing.Point(370, 18);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
@@ -323,6 +332,17 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Mã NV";
             // 
+            // btnLammoi
+            // 
+            this.btnLammoi.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnLammoi.Location = new System.Drawing.Point(170, 25);
+            this.btnLammoi.Name = "btnLammoi";
+            this.btnLammoi.Size = new System.Drawing.Size(89, 32);
+            this.btnLammoi.TabIndex = 3;
+            this.btnLammoi.Text = "Reset";
+            this.btnLammoi.UseVisualStyleBackColor = true;
+            this.btnLammoi.Click += new System.EventHandler(this.BtnLammoi_Click);
+            // 
             // FrmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,6 +351,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmNhanVien";
             this.Text = "FrmNhanVien";
+            this.Load += new System.EventHandler(this.FrmNhanVien_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.groupBox4.ResumeLayout(false);
@@ -371,5 +392,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnLammoi;
     }
 }

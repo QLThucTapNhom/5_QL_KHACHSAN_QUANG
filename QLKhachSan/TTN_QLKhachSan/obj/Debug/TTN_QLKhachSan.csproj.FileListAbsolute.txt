@@ -93,3 +93,27 @@ D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhac
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csprojAssemblyReference.cache
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Form1.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Properties.Resources.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormBCDoanhThu.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormDSPhong.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormHome.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDsHoaDon.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDSPDangSD.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmKhachHang.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmLichSu.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBi.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
+C:\Users\HP\OneDrive\Hình ảnh\Github\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
