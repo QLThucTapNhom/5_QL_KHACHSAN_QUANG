@@ -108,12 +108,13 @@
             // 
             // txtTenNV
             // 
-            this.txtTenNV.Location = new System.Drawing.Point(578, 40);
+            this.txtTenNV.Location = new System.Drawing.Point(578, 43);
             this.txtTenNV.Multiline = true;
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.ReadOnly = true;
             this.txtTenNV.Size = new System.Drawing.Size(168, 27);
             this.txtTenNV.TabIndex = 14;
+            this.txtTenNV.TextChanged += new System.EventHandler(this.txtTenNV_TextChanged);
             // 
             // cbbMaNV
             // 
@@ -140,7 +141,7 @@
             this.comboBoxquyen.Items.AddRange(new object[] {
             "Quản Lý",
             "Lễ Tân"});
-            this.comboBoxquyen.Location = new System.Drawing.Point(631, 92);
+            this.comboBoxquyen.Location = new System.Drawing.Point(631, 95);
             this.comboBoxquyen.Name = "comboBoxquyen";
             this.comboBoxquyen.Size = new System.Drawing.Size(115, 27);
             this.comboBoxquyen.TabIndex = 11;
@@ -179,7 +180,7 @@
             // 
             // txtpass
             // 
-            this.txtpass.Location = new System.Drawing.Point(369, 94);
+            this.txtpass.Location = new System.Drawing.Point(369, 97);
             this.txtpass.Multiline = true;
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(104, 25);

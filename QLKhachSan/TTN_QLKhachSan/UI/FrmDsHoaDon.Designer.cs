@@ -31,9 +31,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonyear = new System.Windows.Forms.RadioButton();
+            this.radioButtonmonth = new System.Windows.Forms.RadioButton();
+            this.radioButtonday = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -64,9 +64,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.radioButtonyear);
+            this.groupBox2.Controls.Add(this.radioButtonmonth);
+            this.groupBox2.Controls.Add(this.radioButtonday);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
@@ -76,38 +76,41 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
-            // radioButton3
+            // radioButtonyear
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(645, 78);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(57, 23);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Năm";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButtonyear.AutoSize = true;
+            this.radioButtonyear.Location = new System.Drawing.Point(645, 78);
+            this.radioButtonyear.Name = "radioButtonyear";
+            this.radioButtonyear.Size = new System.Drawing.Size(57, 23);
+            this.radioButtonyear.TabIndex = 5;
+            this.radioButtonyear.TabStop = true;
+            this.radioButtonyear.Text = "Năm";
+            this.radioButtonyear.UseVisualStyleBackColor = true;
+            this.radioButtonyear.CheckedChanged += new System.EventHandler(this.radioButtonyear_CheckedChanged);
             // 
-            // radioButton2
+            // radioButtonmonth
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(429, 80);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(98, 23);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Tháng/Năm";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonmonth.AutoSize = true;
+            this.radioButtonmonth.Location = new System.Drawing.Point(429, 80);
+            this.radioButtonmonth.Name = "radioButtonmonth";
+            this.radioButtonmonth.Size = new System.Drawing.Size(98, 23);
+            this.radioButtonmonth.TabIndex = 4;
+            this.radioButtonmonth.TabStop = true;
+            this.radioButtonmonth.Text = "Tháng/Năm";
+            this.radioButtonmonth.UseVisualStyleBackColor = true;
+            this.radioButtonmonth.CheckedChanged += new System.EventHandler(this.radioButtonmonth_CheckedChanged);
             // 
-            // radioButton1
+            // radioButtonday
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(199, 80);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(135, 23);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Ngày/Tháng/Năm";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonday.AutoSize = true;
+            this.radioButtonday.Location = new System.Drawing.Point(199, 80);
+            this.radioButtonday.Name = "radioButtonday";
+            this.radioButtonday.Size = new System.Drawing.Size(135, 23);
+            this.radioButtonday.TabIndex = 3;
+            this.radioButtonday.TabStop = true;
+            this.radioButtonday.Text = "Ngày/Tháng/Năm";
+            this.radioButtonday.UseVisualStyleBackColor = true;
+            this.radioButtonday.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label2
             // 
@@ -129,11 +132,13 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CustomFormat = "M/d/yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(102, 25);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(115, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(95, 26);
             this.dateTimePicker1.TabIndex = 0;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // FrmDsHoaDon
             // 
@@ -143,6 +148,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmDsHoaDon";
             this.Text = "FrmDsHoaDon";
+            this.Load += new System.EventHandler(this.FrmDsHoaDon_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -156,9 +162,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButtonyear;
+        private System.Windows.Forms.RadioButton radioButtonmonth;
+        private System.Windows.Forms.RadioButton radioButtonday;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

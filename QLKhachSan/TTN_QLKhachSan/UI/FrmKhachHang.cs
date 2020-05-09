@@ -42,8 +42,8 @@ namespace TTN_QLKhachSan.UI
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string cmnd = cbbcmnd.SelectedItem.ToString();
-            database.loadTextBox(txtten, "select TenKH from KHACHHANG");
-            database.loadTextBox(txtsdt, "select SDT from KHACHHANG");
+            database.loadTextBox(txtten, "select TenKH from KHACHHANG where CMND = N'"+ cmnd +"'");
+            database.loadTextBox(txtsdt, "select SDT from KHACHHANG where CMND = N'" + cmnd + "'");
             MAKH.Text = "Mã KH :";
             database.loadlabel(showma, "select MaKH from KHACHHANG where CMND = N'" + cmnd + "'");
         }
