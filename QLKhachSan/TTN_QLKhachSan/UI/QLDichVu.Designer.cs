@@ -34,11 +34,11 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.dGVDichVu = new System.Windows.Forms.DataGridView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtgia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtten = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtma = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -49,11 +49,11 @@
             // 
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.dGVDichVu);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtgia);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtten);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtma);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox1.Location = new System.Drawing.Point(12, 2);
@@ -83,6 +83,7 @@
             this.btnThem.TabIndex = 6;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSua
             // 
@@ -93,6 +94,7 @@
             this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -103,6 +105,7 @@
             this.btnXoa.TabIndex = 7;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // dGVDichVu
             // 
@@ -111,14 +114,15 @@
             this.dGVDichVu.Name = "dGVDichVu";
             this.dGVDichVu.Size = new System.Drawing.Size(775, 202);
             this.dGVDichVu.TabIndex = 9;
+            this.dGVDichVu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVDichVu_CellContentClick);
             // 
-            // textBox3
+            // txtgia
             // 
-            this.textBox3.Location = new System.Drawing.Point(658, 33);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(134, 25);
-            this.textBox3.TabIndex = 5;
+            this.txtgia.Location = new System.Drawing.Point(658, 33);
+            this.txtgia.Multiline = true;
+            this.txtgia.Name = "txtgia";
+            this.txtgia.Size = new System.Drawing.Size(134, 25);
+            this.txtgia.TabIndex = 5;
             // 
             // label3
             // 
@@ -129,13 +133,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Đơn Giá";
             // 
-            // textBox2
+            // txtten
             // 
-            this.textBox2.Location = new System.Drawing.Point(405, 33);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 25);
-            this.textBox2.TabIndex = 3;
+            this.txtten.Location = new System.Drawing.Point(405, 33);
+            this.txtten.Multiline = true;
+            this.txtten.Name = "txtten";
+            this.txtten.Size = new System.Drawing.Size(134, 25);
+            this.txtten.TabIndex = 3;
             // 
             // label2
             // 
@@ -146,13 +150,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên Dịch Vụ";
             // 
-            // textBox1
+            // txtma
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 33);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(134, 25);
-            this.textBox1.TabIndex = 1;
+            this.txtma.Location = new System.Drawing.Point(103, 33);
+            this.txtma.Multiline = true;
+            this.txtma.Name = "txtma";
+            this.txtma.Size = new System.Drawing.Size(134, 25);
+            this.txtma.TabIndex = 1;
             // 
             // label1
             // 
@@ -171,6 +175,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "QLDichVu";
             this.Text = "QLDichVu";
+            this.Load += new System.EventHandler(this.QLDichVu_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -186,11 +191,11 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtgia;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtten;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtma;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
     }

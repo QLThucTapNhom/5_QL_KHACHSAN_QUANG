@@ -156,3 +156,10 @@ INSERT INTO HOADON VALUES('1','1','2020/05/07 9:00:00','2020/05/05 9:00:00','202
 INSERT INTO HOADON VALUES('1','P01','1','2020/05/07 9:00:00','2020/05/05 9:00:00','2020/05/07 9:00:00',200000,850000)  
 
 >>>>>>> ee35ca4cf6b61d380626083b87af9576f4fc387a
+
+create proc Xoa_DV @MaDV nvarchar(20)
+as
+begin
+delete from DICHVU where MaDV = @MaDV
+delete from DICHVU_SD where MaDV = @MaDV
+end
