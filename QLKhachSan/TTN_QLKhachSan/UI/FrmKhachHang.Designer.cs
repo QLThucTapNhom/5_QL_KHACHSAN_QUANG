@@ -48,6 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtten = new System.Windows.Forms.TextBox();
+            this.btnReset = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvkh)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -91,10 +92,11 @@
             // 
             // dgvkh
             // 
+            this.dgvkh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvkh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvkh.Location = new System.Drawing.Point(11, 264);
             this.dgvkh.Name = "dgvkh";
-            this.dgvkh.Size = new System.Drawing.Size(785, 112);
+            this.dgvkh.Size = new System.Drawing.Size(785, 123);
             this.dgvkh.TabIndex = 3;
             // 
             // groupBox4
@@ -115,6 +117,7 @@
             this.cbbtkcmnd.Name = "cbbtkcmnd";
             this.cbbtkcmnd.Size = new System.Drawing.Size(492, 27);
             this.cbbtkcmnd.TabIndex = 7;
+            this.cbbtkcmnd.SelectedIndexChanged += new System.EventHandler(this.cbbtkcmnd_SelectedIndexChanged);
             // 
             // button5
             // 
@@ -138,6 +141,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnReset);
             this.groupBox3.Controls.Add(this.buttonxoa);
             this.groupBox3.Controls.Add(this.buttonds);
             this.groupBox3.Controls.Add(this.buttonsua);
@@ -151,7 +155,7 @@
             // buttonxoa
             // 
             this.buttonxoa.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonxoa.Location = new System.Drawing.Point(575, 25);
+            this.buttonxoa.Location = new System.Drawing.Point(467, 25);
             this.buttonxoa.Name = "buttonxoa";
             this.buttonxoa.Size = new System.Drawing.Size(92, 30);
             this.buttonxoa.TabIndex = 3;
@@ -162,7 +166,7 @@
             // buttonds
             // 
             this.buttonds.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonds.Location = new System.Drawing.Point(415, 25);
+            this.buttonds.Location = new System.Drawing.Point(637, 25);
             this.buttonds.Name = "buttonds";
             this.buttonds.Size = new System.Drawing.Size(92, 30);
             this.buttonds.TabIndex = 2;
@@ -173,7 +177,7 @@
             // buttonsua
             // 
             this.buttonsua.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonsua.Location = new System.Drawing.Point(252, 25);
+            this.buttonsua.Location = new System.Drawing.Point(318, 25);
             this.buttonsua.Name = "buttonsua";
             this.buttonsua.Size = new System.Drawing.Size(92, 30);
             this.buttonsua.TabIndex = 1;
@@ -184,7 +188,7 @@
             // buttonthem
             // 
             this.buttonthem.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonthem.Location = new System.Drawing.Point(91, 26);
+            this.buttonthem.Location = new System.Drawing.Point(174, 26);
             this.buttonthem.Name = "buttonthem";
             this.buttonthem.Size = new System.Drawing.Size(92, 30);
             this.buttonthem.TabIndex = 0;
@@ -257,6 +261,17 @@
             this.txtten.Size = new System.Drawing.Size(159, 26);
             this.txtten.TabIndex = 0;
             // 
+            // btnReset
+            // 
+            this.btnReset.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnReset.Location = new System.Drawing.Point(45, 25);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(92, 30);
+            this.btnReset.TabIndex = 4;
+            this.btnReset.Text = "Mới";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // FrmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -300,5 +315,6 @@
         private System.Windows.Forms.ComboBox cbbtkcmnd;
         private System.Windows.Forms.Label showma;
         private System.Windows.Forms.Label MAKH;
+        private System.Windows.Forms.Button btnReset;
     }
 }

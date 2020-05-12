@@ -69,15 +69,5 @@ namespace TTN_QLKhachSan.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap woman_leaning_on_handrail_in_room_1838554 {
-            get {
-                object obj = ResourceManager.GetObject("woman-leaning-on-handrail-in-room-1838554", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

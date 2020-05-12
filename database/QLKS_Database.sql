@@ -44,9 +44,8 @@ CREATE TABLE LOAIPHONG
 (
       MaLoaiPhong nvarchar(20) primary key,
 	  TenLoaiPhong nvarchar(50),
-	  GiaTheoGio MONEY,
-      GiaTheoNgay MONEY,
-	  SoNguoi INT
+	  DonGia MONEY,
+	  SoNgToiDa INT
 )
 
 CREATE TABLE PHONG
@@ -91,6 +90,7 @@ CREATE TABLE HOADON(
 	   NgayLap datetime,
 	   NgayNhan DATETIME,
 	   NgayTra DATETIME,
+	   TienPhong money,
 	   TienDV money,
 	   TongTien money
 )
@@ -100,6 +100,7 @@ CREATE TABLE PHIEUTHUEPHONG
 	 MaKH INT references KHACHHANG(MaKH),
 	 MaPhong nvarchar(20) references PHONG(MaPhong),
 	 NgayNhanPhong datetime,
+	 TienDatCoc MONEY,
 	 )
 
 
@@ -112,20 +113,20 @@ INSERT INTO TAIKHOAN VALUES('admin','123',1,'1')
                    
 INSERT INTO KHACHHANG VALUES (N'Nguyễn Mạnh Quang','12345','0353485333')		
 
-INSERT INTO LOAIPHONG VALUES ('1',N'Phòng 1 người',80000,300000,1)
-INSERT INTO LOAIPHONG VALUES ('2',N'Phòng 2 người',150000,5000000,2),
-							  ('3',N'Phòng 3 người',2000000, 7000000,3),
-							  ('4',N'Phòng 4 người',300000, 1000000,4)
+INSERT INTO LOAIPHONG VALUES ('1',N'Phòng 1 người', 300000, 1)
+INSERT INTO LOAIPHONG VALUES ('2',N'Phòng 2 người', 500000, 2),
+							  ('3',N'Phòng 3 người', 700000, 3),
+							  ('4',N'Phòng 4 người', 900000, 4)
 
-INSERT INTO PHONG VALUES  ('P01','P101','1',N'Thuê'),
-                          ('P02','P102','1',N'Trống'),
-						  ('P03','P103','4',N'Trống'),
-						  ('P04','P104','3',N'Trống'),
-						  ('P05','P201','2',N'Trống'),
-						  ('P06','P202','2',N'Trống'),
-						  ('P07','P203','3',N'Trống'),
-						  ('P08','P204','4',N'Trống'),
-						  ('P09','P301','4',N'Trống')
+INSERT INTO PHONG VALUES  ('P101','P101','1',N'Thuê'),
+                          ('P102','P102','1',N'Trống'),
+						  ('P103','P103','4',N'Trống'),
+						  ('P104','P104','3',N'Trống'),
+						  ('P201','P201','2',N'Trống'),
+						  ('P202','P202','2',N'Trống'),
+						  ('P203','P203','3',N'Trống'),
+						  ('P204','P204','4',N'Trống'),
+						  ('P301','P301','4',N'Trống')
 INSERT INTO DICHVU VALUES ('DV01',N'Mỳ gói',5000),
                            ('DV02',N'Nước ngọt',10000),
 						   ('DV03',N'Spa',100000),
@@ -141,25 +142,24 @@ INSERT INTO THIETBI_SD VALUES ('P01','TB01',1,N'Tốt'),
 							  ('P01','TB04',1,N'Tốt')
                                                       
 
-INSERT INTO PHIEUTHUEPHONG VALUES('1','P01','2020/05/05 8:00:00') 
+INSERT INTO PHIEUTHUEPHONG VALUES('1','P101','2020/05/05 8:00:00','200000') 
 
 
-INSERT INTO DICHVU_SD VALUES ('P01','DV01',1)
-INSERT INTO DICHVU_SD VALUES ('P01','DV02',3)
+INSERT INTO DICHVU_SD VALUES ('P101','DV01',1)
+INSERT INTO DICHVU_SD VALUES ('P101','DV02',3)
 
-<<<<<<< HEAD
-INSERT INTO HOADON VALUES('1','1','2020/05/07 9:00:00','2020/05/05 9:00:00','2020/05/07 9:00:00',200000,850000)  
+
+--INSERT INTO HOADON VALUES('1','1','2020/05/07 9:00:00','2020/05/05 9:00:00','2020/05/07 9:00:00',200000,850000)  
 
 
 --"SELECT*FROM dbo.NHANVIEN WHERE  MaNV like'%"+"+%' OR HoTenNV LIKE '%"++"%' OR CMND LIKE '%"++"%'OR SDT LIKE '%"++"%'OR HoTenNV LIKE '%"++"%'OR DiaChi LIKE '%"++"%'OR ChucVu LIKE '%"++"%'"
-=======
-INSERT INTO HOADON VALUES('1','P01','1','2020/05/07 9:00:00','2020/05/05 9:00:00','2020/05/07 9:00:00',200000,850000)  
 
->>>>>>> ee35ca4cf6b61d380626083b87af9576f4fc387a
+--INSERT INTO HOADON VALUES('1','P01','1','2020/05/07 9:00:00','2020/05/05 9:00:00','2020/05/07 9:00:00',200000,850000)  
 
-create proc Xoa_DV @MaDV nvarchar(20)
-as
-begin
-delete from DICHVU where MaDV = @MaDV
-delete from DICHVU_SD where MaDV = @MaDV
-end
+-- Thủ tục liên quan
+-- create proc Xoa_DV @MaDV nvarchar(20)
+-- as
+-- begin
+-- delete from DICHVU where MaDV = @MaDV
+-- delete from DICHVU_SD where MaDV = @MaDV
+-- end

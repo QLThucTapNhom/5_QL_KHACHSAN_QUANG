@@ -24,7 +24,7 @@ namespace TTN_QLKhachSan.UI
             string temp = cbbLoaiPhong.SelectedItem.ToString();
             cbbMaPhong.Items.Clear();
             database.loadComboBox(cbbMaPhong, "select p.MaPhong from PHONG p, LOAIPHONG lp where p.TrangThai = N'Trống' and p.MaLoaiPhong = lp.MaLoaiPhong and lp.TenLoaiPhong = N'" + temp + "'");
-            database.loadDataGridView(dgvDsPhongTrong, "select p.MaPhong, p.TenPhong from PHONG p, LOAIPHONG lp where p.TrangThai = N'Trống' and p.MaLoaiPhong = lp.MaLoaiPhong and lp.TenLoaiPhong = N'" + temp + "'");
+            database.loadDataGridView(dgvDsPhongTrong, "select p.MaPhong, p.TenPhong, lp.DonGia from PHONG p, LOAIPHONG lp where p.TrangThai = N'Trống' and p.MaLoaiPhong = lp.MaLoaiPhong and lp.TenLoaiPhong = N'" + temp + "'");
         }
 
         private void FrmThuePhong_Load(object sender, EventArgs e)
@@ -44,16 +44,25 @@ namespace TTN_QLKhachSan.UI
                 string makh = txtMaKH.Text.Trim();
                 string phong = cbbMaPhong.Text.Trim();
                 string Nthue = dtpNgayThue.Value.ToString();
+                string TienDC = txtDatCoc.Text.Trim();
                 
                 if (cmnd.Length != 0)
-                    {
-                        string insert = "insert into PHIEUTHUEPHONG(MaKH, MaPhong, NgayNhanPhong) values(N'" + makh + "', N'" + phong + "', N'" + Nthue + "')";
-                        database.ThucThiKetNoi(insert);
-                        string update = "update PHONG set TrangThai = N'Thuê' where MaPhong = '" + phong + "'";
-                        database.ThucThiKetNoi(update);
-                        MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        database.loadDataGridView(dgvThuePhong, "select * from PHIEUTHUEPHONG");
-                    }                            
+                {
+                        
+                    string insert = "insert into PHIEUTHUEPHONG(MaKH, MaPhong, NgayNhanPhong, TienDatCoc) values(N'" + makh + "', N'" + phong + "', N'" + Nthue + "', '"+TienDC+"')";   
+                    database.ThucThiKetNoi(insert);    
+                    string update = "update PHONG set TrangThai = N'Thuê' where MaPhong = '" + phong + "'";   
+                    database.ThucThiKetNoi(update);
+                    MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+
+                    string query = "SELECT TOP(1) PH.MaPhieu, KH.TenKH, P.MaPhong, P.TenPhong, LP.DonGia, PH.NgayNhanPhong "
+                    + "FROM dbo.PHIEUTHUEPHONG PH, dbo.KHACHHANG KH, dbo.PHONG P, dbo.LOAIPHONG LP "
+                    + "WHERE KH.MaKH = PH.MaKH AND P.MaPhong = PH.MaPhong AND LP.MaLoaiPhong = P.MaLoaiPhong "
+                    + "ORDER BY PH.MaPhieu DESC";
+                    database.loadDataGridView(dgvThuePhong, query);
+
+                }                            
             }
             catch
             {
@@ -78,5 +87,12 @@ namespace TTN_QLKhachSan.UI
         private void cbbMaPhong_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

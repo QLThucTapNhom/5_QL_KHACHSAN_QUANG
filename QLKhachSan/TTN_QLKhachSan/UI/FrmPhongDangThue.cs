@@ -13,6 +13,8 @@ namespace TTN_QLKhachSan.UI
 {
     public partial class FrmPhongDangThue : Form
     {
+        public static string maphieuthuephong;
+      
         ConnectDatabase database = new ConnectDatabase();
         public FrmPhongDangThue()
         {
@@ -21,13 +23,9 @@ namespace TTN_QLKhachSan.UI
 
         private void btnTraPhong_Click(object sender, EventArgs e)
         {
+            maphieuthuephong = txtMPThuePhong.Text.Trim();
             FrmThanhToan th = new FrmThanhToan();
             th.Show();
-        }
-        public void loaddgvttdv()
-        {
-            string temp = cbbMaPhong.Text.Trim();
-            database.loadDataGridView(dgvDichVu, "select dv.MaDV,  dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV =dv.MaDV  and Maphong = N'" + temp + "'");
         }
         public void Reset()
         {
@@ -37,13 +35,18 @@ namespace TTN_QLKhachSan.UI
         }
         private void cbbMaPhong_SelectedIndexChanged(object sender, EventArgs e)
         {
-            loaddgvttdv();
-             string temp1 = cbbMaPhong.SelectedItem.ToString();
-            database.loadDataGridView(dgvThongTin, "select pt.MaPhieu, pt.MaKH,kh.TenKH,p.TenPhong,lp.TenLoaiPhong "
-                                                    + "from PHIEUTHUEPHONG pt,PHONG p,KHACHHANG kh, LOAIPHONG lp " 
-                                                    + "where pt.MaKH = kh.MaKH and pt.MaPhong = p.MaPhong and p.MaLoaiPhong = lp.MaLoaiPhong and p.MaPhong = N'"+ temp1 +"'");
-
-            
+            string temp = cbbMaPhong.SelectedItem.ToString();
+            database.loadTextBox(txtMPThuePhong," SELECT TOP(1) MaPhieu FROM dbo.PHIEUTHUEPHONG WHERE MaPhong = '"+temp+"' ORDER BY MaPhieu DESC");
+            string mpt = txtMPThuePhong.Text.Trim();
+            database.loadDataGridView(dgvThongTin, "SELECT PH.MaPhieu, KH.TenKH,P.MaPhong, P.TenPhong,PH.NgayNhanPhong, PH.TienDatCoc "
+                                                  +"FROM dbo.PHIEUTHUEPHONG PH, dbo.KHACHHANG KH, dbo.PHONG P "
+                                                  + "WHERE PH.MaKH = KH.MaKH AND P.MaPhong = PH.MaPhong "
+                                                  +"AND PH.MaPhieu = '"+mpt+"'");
+            database.loadTextBox(txtTenPhong, "SELECT TenPhong FROM dbo.PHONG WHERE MaPhong=N'"+temp+"'");
+            //database.loadDataGridView(dgvThongTin, "select pt.MaPhieu, pt.MaKH,kh.TenKH,p.TenPhong,lp.TenLoaiPhong "
+            // + "from PHIEUTHUEPHONG pt,PHONG p,KHACHHANG kh, LOAIPHONG lp " 
+            // + "where pt.MaKH = kh.MaKH and pt.MaPhong = p.MaPhong and p.MaLoaiPhong = lp.MaLoaiPhong and p.MaPhong = N'"+ temp +"'");
+            database.loadDataGridView(dgvDichVu, "select dv.MaDV,  dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV =dv.MaDV  and Maphong = N'" + temp +"'");
         }
 
         private void FrmPhongDangThue_Load(object sender, EventArgs e)
@@ -58,7 +61,7 @@ namespace TTN_QLKhachSan.UI
             string map = cbbMaPhong.SelectedItem.ToString();
             database.loadTextBox(txtTenDV, "select TenDV from DICHVU where MaDV = N'" + madv + "'");
             nudSoLuong.Value = 0;
-            database.loadnumupdown(nudSoLuong, "select SoLuong from DICHVU_SD where MaPhong = N'" + map +"' and MaDV = N'"+ madv +"'");
+            //database.loadnumupdown(nudSoLuong, "select SoLuong from DICHVU_SD where MaPhong = N'" + map +"' and MaDV = N'"+ madv +"'");
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -74,17 +77,18 @@ namespace TTN_QLKhachSan.UI
                     bool check = database.Check(madv, "select MaDV from DICHVU_SD where MaPhong = N'" + phong +"'");
                     if (check == true)
                     {
-                        string update = "update DICHVU_SD set SoLuong = N'" + sl +"' where MaDV = N'" + madv +"' and MaPhong = N'" + phong +"'";
-                        database.ThucThiKetNoi(update);
+                        //string update = "update DICHVU_SD set SoLuong = N'" + sl +"' where MaDV = N'" + madv +"' and MaPhong = N'" + phong +"'";
+                        string upd = "UPDATE dbo.DICHVU_SD SET SoLuong = SoLuong + "+sl+" WHERE MaPhong = N'" + phong + "' AND MaDV='" + madv + "'";
+                        database.ThucThiKetNoi(upd);
                         MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        loaddgvttdv();
+                        database.loadDataGridView(dgvDichVu, "select dv.MaDV, dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV = dv.MaDV  and sd.Maphong = N'" + phong + "'");
                     }
                     else
                     {
                         string insert = "insert into DICHVU_SD(MaPhong,MaDV,SoLuong) values (N'"+ phong +"',N'"+madv+"',N'"+sl+"')";
                         database.ThucThiKetNoi(insert);
                         MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        loaddgvttdv();
+                        database.loadDataGridView(dgvDichVu, "select dv.MaDV, dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV = dv.MaDV  and sd.Maphong = N'" + phong + "'");
 
                     }
                     Reset();
@@ -112,14 +116,11 @@ namespace TTN_QLKhachSan.UI
                     bool check = database.Check(madv, "select MaDV from DICHVU_SD where MaPhong = N'" + phong + "'");
                     if (check == true)
                     {
-                        DialogResult h = MessageBox.Show("Bạn có muốn hủy Dịch vụ tại Phòng này không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-                        if (h == DialogResult.Yes)
-                        {
-                            string dele = "delete DICHVU_SD where MaDV = N'" + madv + "' and MaPhong = N'" + phong + "' ";
-                            database.ThucThiKetNoi(dele);
-                            MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            loaddgvttdv();
-                        }
+                        string dele = "delete DICHVU_SD where MaDV = N'" + madv +"' and MaPhong = N'"+phong+"' ";
+                        database.ThucThiKetNoi(dele);
+                        MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        database.loadDataGridView(dgvDichVu, "select dv.MaDV, dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV =dv.MaDV  and sd.Maphong = N'" + phong + "'");
+
                     }
                     else
                     {

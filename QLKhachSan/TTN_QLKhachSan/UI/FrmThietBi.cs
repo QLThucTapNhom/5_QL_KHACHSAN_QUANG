@@ -18,12 +18,7 @@ namespace TTN_QLKhachSan.UI
         {
             InitializeComponent();
         }
-        public void loaddgvdvp()
-        {
-            string temp1 = cbbMaPhong.Text.Trim();
-            database.loadDataGridView(dgvDichVu, "select  sd.MaTB, tb.TenTB, sd.SoLuong, sd.TrangThai from THIETBI_SD sd, THIETBI tb where sd.MaTB =tb.MaTB and sd.MaPhong = N'" + temp1 + "'");
 
-        }
         private void FrmThietBi_Load(object sender, EventArgs e)
         {
             database.loadComboBox(cbbMaPhong, "select MaPhong from PHONG");
@@ -36,7 +31,7 @@ namespace TTN_QLKhachSan.UI
             database.loadDataGridView(dgvThongTin, "select pt.MaPhieu, pt.MaKH,kh.TenKH,p.TenPhong,lp.TenLoaiPhong "
                                         + "from PHIEUTHUEPHONG pt,PHONG p,KHACHHANG kh, LOAIPHONG lp "
                                         + "where pt.MaKH = kh.MaKH and pt.MaPhong = p.MaPhong and p.MaLoaiPhong = lp.MaLoaiPhong and p.MaPhong = N'" + temp + "'");
-            loaddgvdvp();
+            database.loadDataGridView(dgvDichVu, "select  sd.MaTB, tb.TenTB, sd.SoLuong from THIETBI_SD sd, THIETBI tb where sd.MaTB =tb.MaTB and sd.MaPhong = N'" + temp + "'");
         }
 
         private void cbbMaDV_SelectedIndexChanged(object sender, EventArgs e)
@@ -65,14 +60,14 @@ namespace TTN_QLKhachSan.UI
                         string update = "update THIETBI_SD set SoLuong = N'"+sl+"',TrangThai =N'"+tt+"' where MaPhong =N'"+maphong+"' and MaTB = N'"+matb+"'";
                         database.ThucThiKetNoi(update);
                         MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        loaddgvdvp();
+                        database.loadDataGridView(dgvDichVu, "select  sd.MaTB, tb.TenTB, sd.SoLuong from THIETBI_SD sd, THIETBI tb where sd.MaTB =tb.MaTB and sd.MaPhong = N'" + maphong + "'");
                     }
                     else
                     {
                         string insert = "insert into THIETBI values (N'"+maphong+"',N'"+matb+"',N'"+sl+"',N'"+tt+"')";
                         database.ThucThiKetNoi(insert);
                         MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        loaddgvdvp();
+                        database.loadDataGridView(dgvDichVu, "select  sd.MaTB, tb.TenTB, sd.SoLuong from THIETBI_SD sd, THIETBI tb where sd.MaTB =tb.MaTB and sd.MaPhong = N'" + maphong + "'");
 
                     }
                 }
@@ -96,18 +91,13 @@ namespace TTN_QLKhachSan.UI
                 string matb = cbbMaTB.Text.Trim();
                 if (matb.Length != 0 && phong.Length != 0)
                 {
-
                     bool check = database.Check(matb, "select MaTB from THIETBI_SD where MaPhong = N'" + phong + "'");
                     if (check == true)
                     {
-                        DialogResult h = MessageBox.Show("Bạn có muốn xóa Thiết bị ở Phòng này không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-                        if (h == DialogResult.Yes)
-                        {
-                            string dele = "delete THIETBI_SD where MaTB = N'" + matb + "' and MaPhong = N'" + phong + "' ";
-                            database.ThucThiKetNoi(dele);
-                            MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            loaddgvdvp();
-                        }
+                        string dele = "delete THIETBI_SD where MaTB = N'" + matb + "' and MaPhong = N'" + phong + "' ";
+                        database.ThucThiKetNoi(dele);
+                        MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        database.loadDataGridView(dgvDichVu, "select  sd.MaTB, tb.TenTB, sd.SoLuong from THIETBI_SD sd, THIETBI tb where sd.MaTB =tb.MaTB and sd.MaPhong = N'" + phong + "'");
                     }
                     else
                     {

@@ -38,8 +38,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtten = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtma = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbbDV = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVDichVu)).BeginInit();
@@ -47,13 +47,13 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cbbDV);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.dGVDichVu);
             this.groupBox1.Controls.Add(this.txtgia);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtten);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtma);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox1.Location = new System.Drawing.Point(12, 2);
@@ -73,11 +73,12 @@
             this.groupBox2.Size = new System.Drawing.Size(770, 54);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnThem
             // 
             this.btnThem.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnThem.Location = new System.Drawing.Point(162, 18);
+            this.btnThem.Location = new System.Drawing.Point(208, 16);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 30);
             this.btnThem.TabIndex = 6;
@@ -88,7 +89,7 @@
             // btnSua
             // 
             this.btnSua.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSua.Location = new System.Drawing.Point(335, 18);
+            this.btnSua.Location = new System.Drawing.Point(336, 16);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 30);
             this.btnSua.TabIndex = 8;
@@ -99,7 +100,7 @@
             // btnXoa
             // 
             this.btnXoa.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnXoa.Location = new System.Drawing.Point(515, 18);
+            this.btnXoa.Location = new System.Drawing.Point(476, 16);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 30);
             this.btnXoa.TabIndex = 7;
@@ -109,10 +110,11 @@
             // 
             // dGVDichVu
             // 
+            this.dGVDichVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dGVDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVDichVu.Location = new System.Drawing.Point(17, 168);
+            this.dGVDichVu.Location = new System.Drawing.Point(17, 149);
             this.dGVDichVu.Name = "dGVDichVu";
-            this.dGVDichVu.Size = new System.Drawing.Size(775, 202);
+            this.dGVDichVu.Size = new System.Drawing.Size(775, 221);
             this.dGVDichVu.TabIndex = 9;
             this.dGVDichVu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVDichVu_CellContentClick);
             // 
@@ -150,6 +152,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên Dịch Vụ";
             // 
+            // txtma
+            // 
+            this.txtma.Location = new System.Drawing.Point(103, 33);
+            this.txtma.Multiline = true;
+            this.txtma.Name = "txtma";
+            this.txtma.Size = new System.Drawing.Size(134, 25);
+            this.txtma.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -158,15 +168,6 @@
             this.label1.Size = new System.Drawing.Size(84, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Dịch Vụ";
-            // 
-            // cbbDV
-            // 
-            this.cbbDV.FormattingEnabled = true;
-            this.cbbDV.Location = new System.Drawing.Point(114, 33);
-            this.cbbDV.Name = "cbbDV";
-            this.cbbDV.Size = new System.Drawing.Size(128, 27);
-            this.cbbDV.TabIndex = 11;
-            this.cbbDV.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // QLDichVu
             // 
@@ -196,9 +197,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtten;
         private System.Windows.Forms.Label label2;
-
+        private System.Windows.Forms.TextBox txtma;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox cbbDV;
     }
 }
