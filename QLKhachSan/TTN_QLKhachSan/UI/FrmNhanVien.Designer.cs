@@ -54,8 +54,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.cbbMaNV = new System.Windows.Forms.ComboBox();
             this.txtTenNV = new System.Windows.Forms.TextBox();
+=======
+            this.btnLammoi = new System.Windows.Forms.Button();
+>>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -172,6 +176,16 @@
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.BtnTimKiem_Click);
+<<<<<<< HEAD
+=======
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(161, 17);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(462, 26);
+            this.txtTimKiem.TabIndex = 1;
+>>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
             // 
             // label1
             // 
@@ -330,6 +344,7 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Mã NV";
             // 
+<<<<<<< HEAD
             // cbbMaNV
             // 
             this.cbbMaNV.FormattingEnabled = true;
@@ -345,6 +360,18 @@
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.Size = new System.Drawing.Size(169, 26);
             this.txtTenNV.TabIndex = 21;
+=======
+            // btnLammoi
+            // 
+            this.btnLammoi.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnLammoi.Location = new System.Drawing.Point(170, 25);
+            this.btnLammoi.Name = "btnLammoi";
+            this.btnLammoi.Size = new System.Drawing.Size(89, 32);
+            this.btnLammoi.TabIndex = 3;
+            this.btnLammoi.Text = "Reset";
+            this.btnLammoi.UseVisualStyleBackColor = true;
+            this.btnLammoi.Click += new System.EventHandler(this.BtnLammoi_Click);
+>>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
             // 
             // FrmNhanVien
             // 
@@ -393,8 +420,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLammoi;
+<<<<<<< HEAD
         private System.Windows.Forms.ComboBox cbbtimnv;
         private System.Windows.Forms.ComboBox cbbMaNV;
         private System.Windows.Forms.TextBox txtTenNV;
+=======
+>>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
     }
 }

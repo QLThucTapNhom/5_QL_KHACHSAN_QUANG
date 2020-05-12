@@ -38,6 +38,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtten = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+=======
+            this.txtma = new System.Windows.Forms.TextBox();
+>>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
             this.label1 = new System.Windows.Forms.Label();
             this.cbbDV = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
@@ -54,6 +58,10 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtten);
             this.groupBox1.Controls.Add(this.label2);
+<<<<<<< HEAD
+=======
+            this.groupBox1.Controls.Add(this.txtma);
+>>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox1.Location = new System.Drawing.Point(12, 2);
@@ -150,6 +158,17 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên Dịch Vụ";
             // 
+<<<<<<< HEAD
+=======
+            // txtma
+            // 
+            this.txtma.Location = new System.Drawing.Point(103, 33);
+            this.txtma.Multiline = true;
+            this.txtma.Name = "txtma";
+            this.txtma.Size = new System.Drawing.Size(134, 25);
+            this.txtma.TabIndex = 1;
+            // 
+>>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
             // label1
             // 
             this.label1.AutoSize = true;
@@ -196,6 +215,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtten;
         private System.Windows.Forms.Label label2;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.TextBox txtma;
+>>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox cbbDV;

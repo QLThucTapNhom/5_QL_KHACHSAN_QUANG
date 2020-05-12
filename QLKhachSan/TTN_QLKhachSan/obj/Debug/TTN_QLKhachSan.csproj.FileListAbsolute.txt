@@ -141,6 +141,7 @@ D:\Hoc ky 6\tt nhóm\Nhom\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debu
 D:\Hoc ky 6\tt nhóm\Nhom\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
 D:\Hoc ky 6\tt nhóm\Nhom\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
 D:\Hoc ky 6\tt nhóm\Nhom\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+<<<<<<< HEAD
 D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
 D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
 D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
@@ -165,3 +166,5 @@ D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKha
 D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
 D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
 D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+=======
+>>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
