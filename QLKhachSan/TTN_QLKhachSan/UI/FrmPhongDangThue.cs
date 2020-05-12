@@ -24,6 +24,11 @@ namespace TTN_QLKhachSan.UI
             FrmThanhToan th = new FrmThanhToan();
             th.Show();
         }
+        public void loaddgvttdv()
+        {
+            string temp = cbbMaPhong.Text.Trim();
+            database.loadDataGridView(dgvDichVu, "select dv.MaDV,  dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV =dv.MaDV  and Maphong = N'" + temp + "'");
+        }
         public void Reset()
         {
             cbbMaDV.Text = "";
@@ -32,11 +37,13 @@ namespace TTN_QLKhachSan.UI
         }
         private void cbbMaPhong_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string temp = cbbMaPhong.SelectedItem.ToString();
+            loaddgvttdv();
+             string temp1 = cbbMaPhong.SelectedItem.ToString();
             database.loadDataGridView(dgvThongTin, "select pt.MaPhieu, pt.MaKH,kh.TenKH,p.TenPhong,lp.TenLoaiPhong "
                                                     + "from PHIEUTHUEPHONG pt,PHONG p,KHACHHANG kh, LOAIPHONG lp " 
-                                                    + "where pt.MaKH = kh.MaKH and pt.MaPhong = p.MaPhong and p.MaLoaiPhong = lp.MaLoaiPhong and p.MaPhong = N'"+ temp +"'");
-            database.loadDataGridView(dgvDichVu, "select dv.MaDV,  dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV =dv.MaDV  and Maphong = N'" + temp +"'");
+                                                    + "where pt.MaKH = kh.MaKH and pt.MaPhong = p.MaPhong and p.MaLoaiPhong = lp.MaLoaiPhong and p.MaPhong = N'"+ temp1 +"'");
+
+            
         }
 
         private void FrmPhongDangThue_Load(object sender, EventArgs e)
@@ -70,14 +77,14 @@ namespace TTN_QLKhachSan.UI
                         string update = "update DICHVU_SD set SoLuong = N'" + sl +"' where MaDV = N'" + madv +"' and MaPhong = N'" + phong +"'";
                         database.ThucThiKetNoi(update);
                         MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        database.loadDataGridView(dgvDichVu, "select dv.MaDV, dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV = dv.MaDV  and sd.Maphong = N'" + phong + "'");
+                        loaddgvttdv();
                     }
                     else
                     {
                         string insert = "insert into DICHVU_SD(MaPhong,MaDV,SoLuong) values (N'"+ phong +"',N'"+madv+"',N'"+sl+"')";
                         database.ThucThiKetNoi(insert);
                         MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        database.loadDataGridView(dgvDichVu, "select dv.MaDV, dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV = dv.MaDV  and sd.Maphong = N'" + phong + "'");
+                        loaddgvttdv();
 
                     }
                     Reset();
@@ -105,11 +112,14 @@ namespace TTN_QLKhachSan.UI
                     bool check = database.Check(madv, "select MaDV from DICHVU_SD where MaPhong = N'" + phong + "'");
                     if (check == true)
                     {
-                        string dele = "delete DICHVU_SD where MaDV = N'" + madv +"' and MaPhong = N'"+phong+"' ";
-                        database.ThucThiKetNoi(dele);
-                        MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        database.loadDataGridView(dgvDichVu, "select dv.MaDV, dv.TenDV , sd.SoLuong from DICHVU dv,DICHVU_SD sd  where sd.MaDV =dv.MaDV  and sd.Maphong = N'" + phong + "'");
-
+                        DialogResult h = MessageBox.Show("Bạn có muốn hủy Dịch vụ tại Phòng này không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                        if (h == DialogResult.Yes)
+                        {
+                            string dele = "delete DICHVU_SD where MaDV = N'" + madv + "' and MaPhong = N'" + phong + "' ";
+                            database.ThucThiKetNoi(dele);
+                            MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            loaddgvttdv();
+                        }
                     }
                     else
                     {

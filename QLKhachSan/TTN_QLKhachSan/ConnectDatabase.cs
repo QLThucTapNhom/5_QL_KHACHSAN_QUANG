@@ -80,6 +80,17 @@ namespace LoginForm_DeMo
             }
             NgatKetNoi();
         }
+        public void loaddtp(DateTimePicker dtp, string strselect)
+        {
+            KetNoi();
+            sqlCommand = new SqlCommand(strselect, sqlConnection);
+            sqlDataReader = sqlCommand.ExecuteReader();
+            while (sqlDataReader.Read())
+            {
+                dtp.Text = (sqlDataReader[0].ToString());
+            }
+            NgatKetNoi();
+        }
         public void loadTextBox(TextBox tb, string strselect)
         {
             KetNoi();

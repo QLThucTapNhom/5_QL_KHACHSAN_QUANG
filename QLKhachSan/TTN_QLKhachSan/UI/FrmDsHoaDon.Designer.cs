@@ -64,6 +64,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox2.Controls.Add(this.radioButtonyear);
             this.groupBox2.Controls.Add(this.radioButtonmonth);
             this.groupBox2.Controls.Add(this.radioButtonday);

@@ -18,6 +18,12 @@ namespace TTN_QLKhachSan.UI
         {
             InitializeComponent();
         }
+        public void Reset()
+        {
+            txttendn.Text = "";
+            txtpass.Text = "";
+            comboBoxquyen.Text = "";
+        }
 
         private void cbbMaNV_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -32,9 +38,7 @@ namespace TTN_QLKhachSan.UI
             }
             else
             {
-                txttendn.Text = "";
-                txtpass.Text = "";
-                comboBoxquyen.Text = "";
+                Reset();
 
             }
 
@@ -100,15 +104,15 @@ namespace TTN_QLKhachSan.UI
 
                 if (check == true)
                 {
-                    string del = "delete from TAIKHOAN where MaNV = N'" + ma + "'";
-                    database.ThucThiKetNoi(del);
-                    MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    database.loadDataGridView(dataGridView1, "select * from TAIKHOAN");
-                    cbbMaNV.Text = "";
-                    txtTenNV.Text = "";
-                    txttendn.Text = "";
-                    txtpass.Text = "";
-                    comboBoxquyen.Text = "";
+                    DialogResult h = MessageBox.Show("Bạn có muốn xóa Tài khoản này không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                    if (h == DialogResult.Yes)
+                    {
+                        string del = "delete from TAIKHOAN where MaNV = N'" + ma + "'";
+                        database.ThucThiKetNoi(del);
+                        MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        database.loadDataGridView(dataGridView1, "select * from TAIKHOAN");
+                        Reset();
+                    }
                 }
                 else
                 {

@@ -33,7 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnThem = new System.Windows.Forms.Button();
+            this.btncapnhat = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTenDV = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -79,7 +79,7 @@
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.nudSoLuong);
             this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.btnThem);
+            this.groupBox4.Controls.Add(this.btncapnhat);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.txtTenDV);
             this.groupBox4.Controls.Add(this.label4);
@@ -98,7 +98,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 26);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Xóa DV";
+            this.button1.Text = "Hủy DV";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -118,16 +118,16 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "SL";
             // 
-            // btnThem
+            // btncapnhat
             // 
-            this.btnThem.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnThem.Location = new System.Drawing.Point(660, 21);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(93, 26);
-            this.btnThem.TabIndex = 1;
-            this.btnThem.Text = "Thêm DV";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.btncapnhat.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btncapnhat.Location = new System.Drawing.Point(660, 21);
+            this.btncapnhat.Name = "btncapnhat";
+            this.btncapnhat.Size = new System.Drawing.Size(93, 26);
+            this.btncapnhat.TabIndex = 1;
+            this.btncapnhat.Text = "Cập Nhật";
+            this.btncapnhat.UseVisualStyleBackColor = true;
+            this.btncapnhat.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label5
             // 
@@ -287,7 +287,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnTraPhong;
         private System.Windows.Forms.Button btbInHd;
-        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btncapnhat;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox4;

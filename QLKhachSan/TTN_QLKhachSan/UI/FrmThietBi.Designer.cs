@@ -30,6 +30,9 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.nudsl = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbbTTtb = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
@@ -44,15 +47,12 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbbMaPhong = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbbTTtb = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.nudsl = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudsl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDichVu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTin)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudsl)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -90,6 +90,33 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thêm thiết bị";
             // 
+            // nudsl
+            // 
+            this.nudsl.Location = new System.Drawing.Point(409, 36);
+            this.nudsl.Name = "nudsl";
+            this.nudsl.Size = new System.Drawing.Size(85, 26);
+            this.nudsl.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(381, 41);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 19);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "SL";
+            // 
+            // cbbTTtb
+            // 
+            this.cbbTTtb.FormattingEnabled = true;
+            this.cbbTTtb.Items.AddRange(new object[] {
+            "Tốt",
+            "Hỏng"});
+            this.cbbTTtb.Location = new System.Drawing.Point(576, 36);
+            this.cbbTTtb.Name = "cbbTTtb";
+            this.cbbTTtb.Size = new System.Drawing.Size(85, 27);
+            this.cbbTTtb.TabIndex = 7;
+            // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
@@ -117,7 +144,7 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(93, 26);
             this.btnThem.TabIndex = 1;
-            this.btnThem.Text = "Cập nhật";
+            this.btnThem.Text = "Cập Nhật";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -219,33 +246,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Phòng";
             // 
-            // cbbTTtb
-            // 
-            this.cbbTTtb.FormattingEnabled = true;
-            this.cbbTTtb.Items.AddRange(new object[] {
-            "Tốt",
-            "Hỏng"});
-            this.cbbTTtb.Location = new System.Drawing.Point(576, 36);
-            this.cbbTTtb.Name = "cbbTTtb";
-            this.cbbTTtb.Size = new System.Drawing.Size(85, 27);
-            this.cbbTTtb.TabIndex = 7;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(381, 41);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 19);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "SL";
-            // 
-            // nudsl
-            // 
-            this.nudsl.Location = new System.Drawing.Point(409, 36);
-            this.nudsl.Name = "nudsl";
-            this.nudsl.Size = new System.Drawing.Size(85, 26);
-            this.nudsl.TabIndex = 9;
-            // 
             // FrmThietBi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,11 +259,11 @@
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudsl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDichVu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTin)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudsl)).EndInit();
             this.ResumeLayout(false);
 
         }

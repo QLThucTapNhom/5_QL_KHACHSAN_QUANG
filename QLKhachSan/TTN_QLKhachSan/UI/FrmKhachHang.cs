@@ -56,28 +56,34 @@ namespace TTN_QLKhachSan.UI
         
         public void Loadcmnd()
         {
+            cbbcmnd.Items.Clear();
+            cbbtkcmnd.Items.Clear();
             database.loadComboBox(cbbcmnd, "select CMND from KHACHHANG");
             database.loadComboBox(cbbtkcmnd, "select CMND from KHACHHANG");
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            string ten = txtten.Text.Trim();
-            string sdt = txtsdt.Text.Trim();
-            string cmnd = cbbcmnd.Text.Trim();
-            string ma = showma.Text.Trim();
+            
             try
             {
+                string ten = txtten.Text.Trim();
+                string sdt = txtsdt.Text.Trim();
+                string cmnd = cbbcmnd.Text.Trim();
+                string ma = showma.Text.Trim();
                 if (ten.Length != 0 && sdt.Length != 0 && cmnd.Length != 0)
                 {
-                    string update = "update KHACHHANG set TenKH = N'" + ten + "', SDT = N'" + sdt + "',CMND= N'" + cmnd + "' where MaNV = N'"+ ma +"'";
-                    database.ThucThiKetNoi(update);
-                    MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    Loadcmnd();
+                    DialogResult h = MessageBox.Show("Bạn có muốn sửa thông tin Khách hàng này không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                    if (h == DialogResult.Yes)
+                    {
+                        string update = "update KHACHHANG set TenKH = N'" + ten + "', CMND = N'" + cmnd + "', SDT = '" + sdt + "' where MaKH = N'" + ma + "'";
+                        database.ThucThiKetNoi(update);
+                        MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        Loadcmnd();
+                    }
                 }
                 else
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-
                 }
             }
             catch
@@ -132,13 +138,17 @@ namespace TTN_QLKhachSan.UI
             string temp = showma.Text.Trim();
             try
             {
-                string delete = "delete KHACHHANG where MaKH = N'" + temp + "'";
-                database.ThucThiKetNoi(delete);
-                MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                database.loadDataGridView(dgvkh, "select * from KHACHHANG");
-                Rerset();
-                Loadcmnd();
+                DialogResult h = MessageBox.Show("Bạn có muốn xóa Khách hàng này không?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                if (h == DialogResult.Yes)
+                {
 
+                    string delete = "delete KHACHHANG where MaKH = N'" + temp + "'";
+                    database.ThucThiKetNoi(delete);
+                    MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    database.loadDataGridView(dgvkh, "select * from KHACHHANG");
+                    Rerset();
+                    Loadcmnd();
+                }
             }
             catch
             {

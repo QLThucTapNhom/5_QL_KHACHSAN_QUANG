@@ -151,7 +151,7 @@
             // buttonxoa
             // 
             this.buttonxoa.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonxoa.Location = new System.Drawing.Point(536, 25);
+            this.buttonxoa.Location = new System.Drawing.Point(575, 25);
             this.buttonxoa.Name = "buttonxoa";
             this.buttonxoa.Size = new System.Drawing.Size(92, 30);
             this.buttonxoa.TabIndex = 3;
@@ -162,7 +162,7 @@
             // buttonds
             // 
             this.buttonds.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonds.Location = new System.Drawing.Point(384, 25);
+            this.buttonds.Location = new System.Drawing.Point(415, 25);
             this.buttonds.Name = "buttonds";
             this.buttonds.Size = new System.Drawing.Size(92, 30);
             this.buttonds.TabIndex = 2;
@@ -173,7 +173,7 @@
             // buttonsua
             // 
             this.buttonsua.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonsua.Location = new System.Drawing.Point(235, 25);
+            this.buttonsua.Location = new System.Drawing.Point(252, 25);
             this.buttonsua.Name = "buttonsua";
             this.buttonsua.Size = new System.Drawing.Size(92, 30);
             this.buttonsua.TabIndex = 1;
