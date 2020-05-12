@@ -19,7 +19,6 @@ namespace TTN_QLKhachSan.UI
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
         public void loadcbbdgv()
         {
             string Load = "Select * From DICHVU";
@@ -27,35 +26,26 @@ namespace TTN_QLKhachSan.UI
             cbbDV.Items.Clear();
             db.loadComboBox(cbbDV, "select MaDV from DICHVU");
         }
-=======
->>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
-
         private void QLDichVu_Load(object sender, EventArgs e)
         {
             string Load = "Select* From DICHVU";
             db.loadDataGridView(dGVDichVu,Load);
-<<<<<<< HEAD
             db.loadComboBox(cbbDV, "select MaDV from DICHVU");
-=======
->>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
+
         }
 
         private void dGVDichVu_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int i;
             i = dGVDichVu.CurrentRow.Index;
-<<<<<<< HEAD
             cbbDV.Text = dGVDichVu.Rows[i].Cells[0].Value.ToString();
-=======
-            txtma.Text = dGVDichVu.Rows[i].Cells[0].Value.ToString();
->>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
             txtten.Text = dGVDichVu.Rows[i].Cells[1].Value.ToString();
             txtgia.Text = dGVDichVu.Rows[i].Cells[2].Value.ToString();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             try
             {
                 string ten = txtten.Text.Trim();
@@ -88,36 +78,12 @@ namespace TTN_QLKhachSan.UI
 
             }
                
-=======
-            if(txtma.Text=="")
-            {
-                MessageBox.Show("Chưa điền đủ thông tin");
-            }
-            else
-            {
-                string id = txtma.Text.Trim();
 
-                bool check = db.Check(id, "select MaDV from DICHVU");
-                if(check==true)
-                {
-                    MessageBox.Show("Mã Dịch Vụ đã Tồn tại");
-                }    
-                else
-                {
-                    string insert = "insert into DICHVU values(N'"+txtma.Text+"',N'"+txtten.Text+"',"+txtgia.Text+")";
-                    db.ThucThiKetNoi(insert);
-                    string Load = "Select* From DICHVU";
-                    db.loadDataGridView(dGVDichVu, Load);
-                    MessageBox.Show("Thêm thành công");
-
-                }    
-            }    
->>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             try
             {
                 string ten = txtten.Text.Trim();
@@ -152,26 +118,12 @@ namespace TTN_QLKhachSan.UI
 
             }
                 
-=======
-            if (txtma.Text == "")
-            {
-                MessageBox.Show("Chưa điền đủ thông tin");
-            }
-            else
-            {
-                string sua = "update DICHVU set TenDV = N'" + txtten.Text + "',GiaDV = " + txtgia.Text + " where MaDV = N'"+txtma.Text+"'";
-                db.ThucThiKetNoi(sua);
-                string Load = "Select* From DICHVU";
-                db.loadDataGridView(dGVDichVu, Load);
-                MessageBox.Show("Sửa thành công");
 
-            }    
->>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             if (cbbDV.Text == "")
             {
                 MessageBox.Show("Chưa điền đủ thông tin cần xóa", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -194,21 +146,7 @@ namespace TTN_QLKhachSan.UI
             string temp = cbbDV.SelectedItem.ToString();
             db.loadTextBox(txtten,"select TenDV from DICHVU where MaDV = N'"+ temp +"'");
             db.loadTextBox(txtgia, "select GiaDV from DICHVU where MaDV = N'" + temp + "'");
-=======
-            if (txtma.Text == "")
-            {
-                MessageBox.Show("Chưa điền đủ thông tin cần xóa");
-            }
-            else
-            {
-                string xoa = "exec Xoa_DV @MaDV =N'"+txtma.Text.Trim()+"'";
-                db.ThucThiKetNoi(xoa);
-                string Load = "Select* From DICHVU";
-                db.loadDataGridView(dGVDichVu, Load);
-                MessageBox.Show("Xóa thành công");
 
-            }    
->>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
         }
     }
 }
