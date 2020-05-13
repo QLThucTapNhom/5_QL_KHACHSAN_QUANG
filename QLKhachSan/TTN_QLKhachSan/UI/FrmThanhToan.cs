@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace TTN_QLKhachSan.UI
 {
     public partial class FrmThanhToan : Form
     {
+        
         public FrmThanhToan()
         {
             InitializeComponent();
@@ -88,24 +90,28 @@ namespace TTN_QLKhachSan.UI
             try
             {
                 //Thêm hóa đơn vào bảng hóa đơn
-                string MaKH = txtMaKH.Text.Trim();
-                string MaPhong = txtPhong.Text.Trim();
-                //string N = dtpNgayTra.Value.ToString();
-                string NgLap = dtpNgayTra.Value.ToString();
-                string NgNhanPhong = dtpNgayThue.Value.ToString();
-                string TienPhong = txtTienPhong.Text.Trim();
-                string TienDV = txtTienDV.Text.Trim();
-                string Tong = txtTongTien.Text.Trim();
-                string insert = "INSERT INTO dbo.HOADON( MaKH ,MaPhong ,MaNV ,NgayLap ,NgayNhan ,NgayTra, TienPhong,TienDV ,TongTien) "
-                                          +"VALUES('"+MaKH+"', N'"+MaPhong+"', NULL,'"+NgLap+"', "+NgNhanPhong+", '"+NgLap+"', "+TienPhong+", "+TienDV+", "+Tong+")";
 
+                string maKH = txtMaKH.Text.Trim();
+                string maPhong = txtMaPhong.Text.Trim();
+                //string ngayLap = dtpNgayTra.Value.ToString();
+                string ngayThue = dtpNgayThue.Value.ToString();
+                string ngayTra = dtpNgayTra.Value.ToString();
+                string tienPhong = txtTienPhong.Text.Trim();
+                string tienDV = txtTienDV.Text.Trim();
+                string tongTien = txtTongTien.Text.Trim();
+                string insert = "insert into dbo.hoadon ( MaKH ,MaPhong  ,NgayLap ,NgayNhan ,NgayTra ,TienPhong ,TienDV ,TongTien) "
+                + "values('" + maKH + "' , N'" + maPhong + "' ,  GETDATE() , '" + ngayThue + "' , '" + ngayTra + "' , '" + tienPhong + "' , '" + tienDV + "' , '" + tongTien + "')";
                 db.ThucThiKetNoi(insert);
+
+                //Trả phòng
                 ////Thiết lập trạng thái phòng về trống
                 string update = "UPDATE dbo.PHONG SET TrangThai=N'Trống' WHERE MaPhong=N'" + txtMaPhong.Text.Trim() + "'";
                 db.ThucThiKetNoi(update);
                 string del = "DELETE FROM dbo.DICHVU_SD WHERE MaPhong=N'" + txtMaPhong.Text.Trim() + "'";
                 db.ThucThiKetNoi(del);
                 MessageBox.Show("Thanh Toán Hoàn Tất!");
+                this.Close();
+                
             }
             catch
             {

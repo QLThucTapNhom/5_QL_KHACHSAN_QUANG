@@ -13,6 +13,7 @@ namespace TTN_QLKhachSan.UI
 {
     public partial class FrmPhongDangThue : Form
     {
+        
         public static string maphieuthuephong;
       
         ConnectDatabase database = new ConnectDatabase();
@@ -23,9 +24,29 @@ namespace TTN_QLKhachSan.UI
 
         private void btnTraPhong_Click(object sender, EventArgs e)
         {
-            maphieuthuephong = txtMPThuePhong.Text.Trim();
-            FrmThanhToan th = new FrmThanhToan();
-            th.Show();
+
+            string maPhieu = txtMPThuePhong.Text.Trim();
+            string maPhong = cbbMaPhong.Text.Trim();
+            bool check=database.Check(maPhong, "SELECT MaPhong FROM dbo.PHONG WHERE MaPhong=N'"+maPhong+"' AND TrangThai LIKE N'%Thuê%'");
+            if (maPhieu.Length != 0)
+            {
+                if (check==true)
+                {
+                    maphieuthuephong = txtMPThuePhong.Text.Trim();
+                    FrmThanhToan th = new FrmThanhToan();
+                    th.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Phòng đã được thanh toán!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn phòng cần thanh toán!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
         }
         public void Reset()
         {
@@ -35,6 +56,7 @@ namespace TTN_QLKhachSan.UI
         }
         private void cbbMaPhong_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.Refresh();
             string temp = cbbMaPhong.SelectedItem.ToString();
             database.loadTextBox(txtMPThuePhong," SELECT TOP(1) MaPhieu FROM dbo.PHIEUTHUEPHONG WHERE MaPhong = '"+temp+"' ORDER BY MaPhieu DESC");
             string mpt = txtMPThuePhong.Text.Trim();
