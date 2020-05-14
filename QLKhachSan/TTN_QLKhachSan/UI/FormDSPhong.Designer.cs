@@ -29,28 +29,27 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvPhong = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.cbbTrangThai = new System.Windows.Forms.ComboBox();
+            this.cbbLoaiPhong = new System.Windows.Forms.ComboBox();
+            this.txtTenPhong = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbbMaPhong = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dgvPhong);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -60,24 +59,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách phòng của khách sạn";
             // 
-            // dataGridView1
+            // dgvPhong
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 186);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 171);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPhong.Location = new System.Drawing.Point(16, 186);
+            this.dgvPhong.Name = "dgvPhong";
+            this.dgvPhong.Size = new System.Drawing.Size(776, 171);
+            this.dgvPhong.TabIndex = 1;
+            this.dgvPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhong_CellClick);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.cbbMaPhong);
+            this.groupBox2.Controls.Add(this.btnXoa);
+            this.groupBox2.Controls.Add(this.btnSua);
+            this.groupBox2.Controls.Add(this.btnThem);
+            this.groupBox2.Controls.Add(this.cbbTrangThai);
+            this.groupBox2.Controls.Add(this.cbbLoaiPhong);
+            this.groupBox2.Controls.Add(this.txtTenPhong);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
@@ -88,75 +87,62 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
-            // button4
+            // btnXoa
             // 
-            this.button4.Location = new System.Drawing.Point(431, 115);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 26);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "DS";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnXoa.Location = new System.Drawing.Point(572, 115);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 26);
+            this.btnXoa.TabIndex = 10;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button3
+            // btnSua
             // 
-            this.button3.Location = new System.Drawing.Point(572, 115);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 26);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSua.Location = new System.Drawing.Point(369, 115);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 26);
+            this.btnSua.TabIndex = 9;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // button2
+            // btnThem
             // 
-            this.button2.Location = new System.Drawing.Point(278, 115);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 26);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnThem.Location = new System.Drawing.Point(160, 115);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 26);
+            this.btnThem.TabIndex = 8;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // button1
+            // cbbTrangThai
             // 
-            this.button1.Location = new System.Drawing.Point(132, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 26);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbbTrangThai.FormattingEnabled = true;
+            this.cbbTrangThai.Items.AddRange(new object[] {
             "Trống",
             "Đang SD"});
-            this.comboBox2.Location = new System.Drawing.Point(524, 65);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(193, 27);
-            this.comboBox2.TabIndex = 7;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.cbbTrangThai.Location = new System.Drawing.Point(524, 65);
+            this.cbbTrangThai.Name = "cbbTrangThai";
+            this.cbbTrangThai.Size = new System.Drawing.Size(193, 27);
+            this.cbbTrangThai.TabIndex = 7;
+            this.cbbTrangThai.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // comboBox1
+            // cbbLoaiPhong
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(160, 65);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 27);
-            this.comboBox1.TabIndex = 6;
+            this.cbbLoaiPhong.FormattingEnabled = true;
+            this.cbbLoaiPhong.Location = new System.Drawing.Point(160, 65);
+            this.cbbLoaiPhong.Name = "cbbLoaiPhong";
+            this.cbbLoaiPhong.Size = new System.Drawing.Size(193, 27);
+            this.cbbLoaiPhong.TabIndex = 6;
             // 
-            // textBox2
+            // txtTenPhong
             // 
-            this.textBox2.Location = new System.Drawing.Point(524, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(193, 26);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(160, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 26);
-            this.textBox1.TabIndex = 4;
+            this.txtTenPhong.Location = new System.Drawing.Point(524, 30);
+            this.txtTenPhong.Name = "txtTenPhong";
+            this.txtTenPhong.Size = new System.Drawing.Size(193, 26);
+            this.txtTenPhong.TabIndex = 5;
             // 
             // label4
             // 
@@ -194,6 +180,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Phòng";
             // 
+            // cbbMaPhong
+            // 
+            this.cbbMaPhong.FormattingEnabled = true;
+            this.cbbMaPhong.Location = new System.Drawing.Point(160, 30);
+            this.cbbMaPhong.Name = "cbbMaPhong";
+            this.cbbMaPhong.Size = new System.Drawing.Size(193, 27);
+            this.cbbMaPhong.TabIndex = 11;
+            // 
             // FormDSPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,8 +196,9 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormDSPhong";
             this.Text = "FormDSPhong";
+            this.Load += new System.EventHandler(this.FormDSPhong_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -213,19 +208,18 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPhong;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.ComboBox cbbTrangThai;
+        private System.Windows.Forms.ComboBox cbbLoaiPhong;
+        private System.Windows.Forms.TextBox txtTenPhong;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbbMaPhong;
     }
 }
