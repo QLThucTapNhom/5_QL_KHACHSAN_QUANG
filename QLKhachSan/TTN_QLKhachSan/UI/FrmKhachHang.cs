@@ -134,12 +134,25 @@ namespace TTN_QLKhachSan.UI
             string temp = showma.Text.Trim();
             try
             {
-                string delete = "delete KHACHHANG where MaKH = N'" + temp + "'";
-                database.ThucThiKetNoi(delete);
-                MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                database.loadDataGridView(dgvkh, "select * from KHACHHANG");
-                Rerset();
-                Loadcmnd();
+                if (temp.Length != 0) {
+
+                    DialogResult y = MessageBox.Show("Bạn muốn xóa khách hàng " + temp + " không ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                    if (y == DialogResult.Yes)
+                    {
+                        string delete = "delete KHACHHANG where MaKH = N'" + temp + "'";
+                        database.ThucThiKetNoi(delete);
+                        MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        database.loadDataGridView(dgvkh, "select * from KHACHHANG");
+                        Rerset();
+                        Loadcmnd();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn khách hàng cần xóa trước!", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+                
+                
 
             }
             catch

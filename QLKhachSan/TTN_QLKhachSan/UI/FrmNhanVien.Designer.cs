@@ -157,7 +157,7 @@
             // btnTimKiem
             // 
             this.btnTimKiem.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnTimKiem.Location = new System.Drawing.Point(634, 14);
+            this.btnTimKiem.Location = new System.Drawing.Point(634, 17);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(109, 26);
             this.btnTimKiem.TabIndex = 2;

@@ -38,20 +38,26 @@ namespace TTN_QLKhachSan.UI
             string day = dateTimePicker1.Value.Day.ToString();
             string month = dateTimePicker1.Value.Month.ToString();
             string year = dateTimePicker1.Value.Year.ToString();
-            database.loadDataGridView(dataGridView1, "select * from PHIEUTHUEPHONG where day(NgayNhanPhong) = N'" + day + "' and month(NgayNhanPhong) = N'" + month + "' and year(NgayNhanPhong) = N'" + year + "'");
+            database.loadDataGridView(dataGridView1, "SELECT PH.MaPhieu, PH.MaPhong, KH.MaKH, KH.TenKH, PH.NgayNhanPhong "
+                + "FROM dbo.PHIEUTHUEPHONG PH, dbo.KHACHHANG KH WHERE PH.MaKH = KH.MaKH AND day(NgayNhanPhong) = N'"
+                + day + "' and month(NgayNhanPhong) = N'" + month + "' and year(NgayNhanPhong) = N'" + year + "'");
         }
 
         private void radioButtonmonth_CheckedChanged_1(object sender, EventArgs e)
         {
             string month = dateTimePicker1.Value.Month.ToString();
             string year = dateTimePicker1.Value.Year.ToString();
-            database.loadDataGridView(dataGridView1, "select * from PHIEUTHUEPHONG where month(NgayNhanPhong) = N'" + month + "' and year(NgayNhanPhong) = N'" + year + "'");
+            database.loadDataGridView(dataGridView1, "SELECT PH.MaPhieu, PH.MaPhong, KH.MaKH, KH.TenKH, PH.NgayNhanPhong "
+                +"FROM dbo.PHIEUTHUEPHONG PH, dbo.KHACHHANG KH "
+                + "where PH.MaKH = KH.MaKH AND month(NgayNhanPhong) = N'" + month + "' and year(NgayNhanPhong) = N'" + year + "'");
         }
 
         private void radioButtonyear_CheckedChanged_1(object sender, EventArgs e)
         {
             string year = dateTimePicker1.Value.Year.ToString();
-            database.loadDataGridView(dataGridView1, "select * from PHIEUTHUEPHONG where year(NgayNhanPhong) = N'" + year + "'");
+            database.loadDataGridView(dataGridView1, "SELECT PH.MaPhieu, PH.MaPhong, KH.MaKH, KH.TenKH, PH.NgayNhanPhong "
+                + "FROM dbo.PHIEUTHUEPHONG PH, dbo.KHACHHANG KH "
+                + " where PH.MaKH = KH.MaKH AND year(NgayNhanPhong) = N'" + year + "'");
         }
 
         private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)

@@ -185,7 +185,7 @@ namespace TTN_QLKhachSan.UI
         {
             string tukhoa = txtTimKiem.Text.Trim();
             //string timkiem ="SELECT*FROM dbo.NHANVIEN WHERE  MaNV like'%" + tukhoa + "+%' OR HoTenNV LIKE '%"+ tukhoa + "%' OR CMND LIKE '%"+ tukhoa + "%'OR SDT LIKE '%"+ tukhoa + "%'OR HoTenNV LIKE '%"+ tukhoa + "%'OR DiaChi LIKE '%"+ tukhoa + "%'OR ChucVu LIKE '%"+ tukhoa + "%'";
-            string timkiem = "SELECT*FROM dbo.NHANVIEN WHERE  HoTenNV LIKE '%" + tukhoa + "%'";
+            string timkiem = "SELECT * FROM dbo.NHANVIEN WHERE  HoTenNV LIKE N'%" + tukhoa + "%'";
             db.loadDataGridView(dgvNhanVien, timkiem);
 
         }

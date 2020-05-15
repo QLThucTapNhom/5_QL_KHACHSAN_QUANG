@@ -31,6 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvPhong = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbbMaPhong = new System.Windows.Forms.ComboBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbbMaPhong = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -61,6 +61,7 @@
             // 
             // dgvPhong
             // 
+            this.dgvPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPhong.Location = new System.Drawing.Point(16, 186);
             this.dgvPhong.Name = "dgvPhong";
@@ -86,6 +87,14 @@
             this.groupBox2.Size = new System.Drawing.Size(776, 160);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
+            // 
+            // cbbMaPhong
+            // 
+            this.cbbMaPhong.FormattingEnabled = true;
+            this.cbbMaPhong.Location = new System.Drawing.Point(160, 30);
+            this.cbbMaPhong.Name = "cbbMaPhong";
+            this.cbbMaPhong.Size = new System.Drawing.Size(193, 27);
+            this.cbbMaPhong.TabIndex = 11;
             // 
             // btnXoa
             // 
@@ -122,7 +131,7 @@
             this.cbbTrangThai.FormattingEnabled = true;
             this.cbbTrangThai.Items.AddRange(new object[] {
             "Trống",
-            "Đang SD"});
+            "Thuê"});
             this.cbbTrangThai.Location = new System.Drawing.Point(524, 65);
             this.cbbTrangThai.Name = "cbbTrangThai";
             this.cbbTrangThai.Size = new System.Drawing.Size(193, 27);
@@ -179,14 +188,6 @@
             this.label1.Size = new System.Drawing.Size(72, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Phòng";
-            // 
-            // cbbMaPhong
-            // 
-            this.cbbMaPhong.FormattingEnabled = true;
-            this.cbbMaPhong.Location = new System.Drawing.Point(160, 30);
-            this.cbbMaPhong.Name = "cbbMaPhong";
-            this.cbbMaPhong.Size = new System.Drawing.Size(193, 27);
-            this.cbbMaPhong.TabIndex = 11;
             // 
             // FormDSPhong
             // 

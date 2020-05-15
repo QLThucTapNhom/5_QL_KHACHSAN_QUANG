@@ -123,14 +123,19 @@ namespace TTN_QLKhachSan.UI
 
                 if (check == true)
                 {
-                    string del = "delete from PHONG where MaPhong = N'" + map + "'";
-                    data.ThucThiKetNoi(del);
-                    MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    data.loadDataGridView(dgvPhong, "select * from PHONG");
-                    cbbMaPhong.Text = "";
-                    txtTenPhong.Text = "";
-                    cbbLoaiPhong.Text = "";
-                    cbbTrangThai.Text = "";
+                    DialogResult y = MessageBox.Show("Bạn muốn xóa phòng " + map+ " không ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                    if (y == DialogResult.Yes)
+                    {
+                        string del = "delete from PHONG where MaPhong = N'" + map + "'";
+                        data.ThucThiKetNoi(del);
+                        MessageBox.Show("Hoàn Tất!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        data.loadDataGridView(dgvPhong, "select * from PHONG");
+                        cbbMaPhong.Text = "";
+                        txtTenPhong.Text = "";
+                        cbbLoaiPhong.Text = "";
+                        cbbTrangThai.Text = "";
+                    }
+                    
                 }
                 else
                 {

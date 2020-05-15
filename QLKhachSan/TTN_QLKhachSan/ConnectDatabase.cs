@@ -11,7 +11,7 @@ namespace LoginForm_DeMo
 {
     class ConnectDatabase
     {
-        string str = @"Data Source=ADMIN;Initial Catalog=QLKHACHSAN;Integrated Security=True";
+        string str = @"Data Source=DESKTOP-4H2CDN2;Initial Catalog=QLKHACHSAN;Integrated Security=True";
         SqlConnection sqlConnection;
         SqlCommand sqlCommand;
         SqlDataAdapter sqlDataAdapter;

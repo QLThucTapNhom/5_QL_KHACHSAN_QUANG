@@ -31,6 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvThuePhong = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dtpNgayThue = new System.Windows.Forms.DateTimePicker();
             this.txtDatCoc = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxcmt = new System.Windows.Forms.ComboBox();
@@ -49,7 +50,6 @@
             this.dgvDsPhongTrong = new System.Windows.Forms.DataGridView();
             this.cbbLoaiPhong = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpNgayThue = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuePhong)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -103,6 +103,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Phiếu Thuê Phòng";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // dtpNgayThue
+            // 
+            this.dtpNgayThue.CustomFormat = "dd-MM-yyyy";
+            this.dtpNgayThue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayThue.Location = new System.Drawing.Point(148, 187);
+            this.dtpNgayThue.Name = "dtpNgayThue";
+            this.dtpNgayThue.Size = new System.Drawing.Size(195, 26);
+            this.dtpNgayThue.TabIndex = 19;
             // 
             // txtDatCoc
             // 
@@ -264,14 +273,6 @@
             this.label1.Size = new System.Drawing.Size(121, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Loại Phòng/Người";
-            // 
-            // dtpNgayThue
-            // 
-            this.dtpNgayThue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayThue.Location = new System.Drawing.Point(148, 187);
-            this.dtpNgayThue.Name = "dtpNgayThue";
-            this.dtpNgayThue.Size = new System.Drawing.Size(195, 26);
-            this.dtpNgayThue.TabIndex = 19;
             // 
             // FrmThuePhong
             // 

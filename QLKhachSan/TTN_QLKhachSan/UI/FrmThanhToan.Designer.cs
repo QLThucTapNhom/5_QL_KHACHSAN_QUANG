@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMaKH = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtConLai = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtTienCoc = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.txtTienTraLai = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -60,12 +66,6 @@
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTienCoc = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtConLai = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtMaKH = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDichVu)).BeginInit();
@@ -115,6 +115,56 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtMaKH
+            // 
+            this.txtMaKH.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtMaKH.Location = new System.Drawing.Point(328, 65);
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.ReadOnly = true;
+            this.txtMaKH.Size = new System.Drawing.Size(61, 26);
+            this.txtMaKH.TabIndex = 54;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(269, 68);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(57, 19);
+            this.label17.TabIndex = 53;
+            this.label17.Text = "Mã KH";
+            // 
+            // txtConLai
+            // 
+            this.txtConLai.Location = new System.Drawing.Point(142, 342);
+            this.txtConLai.Name = "txtConLai";
+            this.txtConLai.Size = new System.Drawing.Size(342, 26);
+            this.txtConLai.TabIndex = 52;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(36, 345);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(58, 19);
+            this.label16.TabIndex = 51;
+            this.label16.Text = "Còn Lại";
+            // 
+            // txtTienCoc
+            // 
+            this.txtTienCoc.Location = new System.Drawing.Point(352, 313);
+            this.txtTienCoc.Name = "txtTienCoc";
+            this.txtTienCoc.Size = new System.Drawing.Size(132, 26);
+            this.txtTienCoc.TabIndex = 50;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(282, 316);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 19);
+            this.label7.TabIndex = 49;
+            this.label7.Text = "Tiền Cọc";
             // 
             // btnThanhToan
             // 
@@ -273,6 +323,7 @@
             // 
             // dtpNgayTra
             // 
+            this.dtpNgayTra.CustomFormat = "dd-MM-yyyy";
             this.dtpNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayTra.Location = new System.Drawing.Point(528, 66);
             this.dtpNgayTra.Name = "dtpNgayTra";
@@ -281,6 +332,7 @@
             // 
             // dtpNgayThue
             // 
+            this.dtpNgayThue.CustomFormat = "dd-MM-yyyy";
             this.dtpNgayThue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayThue.Location = new System.Drawing.Point(528, 34);
             this.dtpNgayThue.Name = "dtpNgayThue";
@@ -386,56 +438,6 @@
             this.label1.Size = new System.Drawing.Size(463, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "THÔNG TIN HÓA ĐƠN THANH TOÁN";
-            // 
-            // txtTienCoc
-            // 
-            this.txtTienCoc.Location = new System.Drawing.Point(352, 313);
-            this.txtTienCoc.Name = "txtTienCoc";
-            this.txtTienCoc.Size = new System.Drawing.Size(132, 26);
-            this.txtTienCoc.TabIndex = 50;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(282, 316);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 19);
-            this.label7.TabIndex = 49;
-            this.label7.Text = "Tiền Cọc";
-            // 
-            // txtConLai
-            // 
-            this.txtConLai.Location = new System.Drawing.Point(142, 342);
-            this.txtConLai.Name = "txtConLai";
-            this.txtConLai.Size = new System.Drawing.Size(342, 26);
-            this.txtConLai.TabIndex = 52;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(36, 345);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(58, 19);
-            this.label16.TabIndex = 51;
-            this.label16.Text = "Còn Lại";
-            // 
-            // txtMaKH
-            // 
-            this.txtMaKH.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtMaKH.Location = new System.Drawing.Point(328, 65);
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.ReadOnly = true;
-            this.txtMaKH.Size = new System.Drawing.Size(61, 26);
-            this.txtMaKH.TabIndex = 54;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(265, 68);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(57, 19);
-            this.label17.TabIndex = 53;
-            this.label17.Text = "Mã KH";
             // 
             // FrmThanhToan
             // 
