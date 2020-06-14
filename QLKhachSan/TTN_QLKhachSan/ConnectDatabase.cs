@@ -11,7 +11,7 @@ namespace LoginForm_DeMo
 {
     class ConnectDatabase
     {
-        string str = @"Data Source=DESKTOP-G186E8N\SQLEXPRESS;Initial Catalog=QLKHACHSAN;Integrated Security=True";
+        string str = @"Data Source=DESKTOP-FKTOQAI\SQLEXPRESS01;Initial Catalog=QLKS;Integrated Security=True";
         SqlConnection sqlConnection;
         SqlCommand sqlCommand;
         SqlDataAdapter sqlDataAdapter;
@@ -80,7 +80,7 @@ namespace LoginForm_DeMo
             }
             NgatKetNoi();
         }
-        public void loaddtp(DateTimePicker dtp, string strselect)
+        public void loadDateTime(DateTimePicker dtp, string strselect)
         {
             KetNoi();
             sqlCommand = new SqlCommand(strselect, sqlConnection);
@@ -115,7 +115,7 @@ namespace LoginForm_DeMo
             }
             NgatKetNoi();
         }
-
+        
 
 
         public bool Check(string temp, string strsql)
@@ -133,6 +133,6 @@ namespace LoginForm_DeMo
             NgatKetNoi();
             return check;
         }
-
+      
     }
 }

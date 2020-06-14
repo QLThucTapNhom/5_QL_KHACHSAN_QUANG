@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>TTN_QLKhachSan</RootNamespace>
     <AssemblyName>TTN_QLKhachSan</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -55,6 +56,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\FormLPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormLPhong.Designer.cs">
+      <DependentUpon>FormLPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FormBCDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +79,12 @@
     </Compile>
     <Compile Include="UI\FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormThietBii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormThietBii.Designer.cs">
+      <DependentUpon>FormThietBii.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FrmDsHoaDon.cs">
       <SubType>Form</SubType>
@@ -115,11 +128,11 @@
     <Compile Include="UI\FrmThanhToan.Designer.cs">
       <DependentUpon>FrmThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmThietBi.cs">
+    <Compile Include="UI\FrmThietBiTheoPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmThietBi.Designer.cs">
-      <DependentUpon>FrmThietBi.cs</DependentUpon>
+    <Compile Include="UI\FrmThietBiTheoPhong.Designer.cs">
+      <DependentUpon>FrmThietBiTheoPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FrmThuePhong.cs">
       <SubType>Form</SubType>
@@ -161,6 +174,12 @@
     <EmbeddedResource Include="UI\FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormLPhong.resx">
+      <DependentUpon>FormLPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormThietBii.resx">
+      <DependentUpon>FormThietBii.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\FrmDsHoaDon.resx">
       <DependentUpon>FrmDsHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,8 +201,8 @@
     <EmbeddedResource Include="UI\FrmThanhToan.resx">
       <DependentUpon>FrmThanhToan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmThietBi.resx">
-      <DependentUpon>FrmThietBi.cs</DependentUpon>
+    <EmbeddedResource Include="UI\FrmThietBiTheoPhong.resx">
+      <DependentUpon>FrmThietBiTheoPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FrmThuePhong.resx">
       <DependentUpon>FrmThuePhong.cs</DependentUpon>

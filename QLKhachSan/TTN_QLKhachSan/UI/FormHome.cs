@@ -35,7 +35,7 @@ namespace TTN_QLKhachSan.UI
         private void ToolStripMenuItemUsers_Click(object sender, EventArgs e)
         {
             string tem = "1";
-            bool check = database.Check(tem, "select MaQuyen from TAIKHOAN where TenDangNhap = '" + Form1.useracc + "'");
+            bool check = database.Check(tem, "select MaQuyen from TAIKHOAN where TenDangNhap = N'" + Form1.useracc + "'");
             if (check == true)
             {
                 QLNguoiDung user = new QLNguoiDung() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -87,7 +87,7 @@ namespace TTN_QLKhachSan.UI
         private void MenuItemNhanVien_Click(object sender, EventArgs e)
         {
             string tem = "1";
-            bool check = database.Check(tem, "select MaQuyen from TAIKHOAN where TenDangNhap = '" + Form1.useracc + "'");
+            bool check = database.Check(tem, "select MaQuyen from TAIKHOAN where TenDangNhap = N'" + Form1.useracc + "'");
             if (check == true)
             {
                 FrmNhanVien Nv = new FrmNhanVien() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -135,28 +135,12 @@ namespace TTN_QLKhachSan.UI
 
         private void MenuItemDSPhong_Click(object sender, EventArgs e)
         {
-            FormDSPhong p = new FormDSPhong() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            p.FormBorderStyle = FormBorderStyle.None;
-            this.panelControl.Controls.Add(p);
-            foreach (Control ctrl in panelControl.Controls)
-            {
-                if (ctrl != p)
-                    ctrl.Dispose();
-            }
-            p.Show();
+            
         }
 
         private void MenuItemThietBiPhong_Click(object sender, EventArgs e)
         {
-            FrmThietBi p = new FrmThietBi() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            p.FormBorderStyle = FormBorderStyle.None;
-            this.panelControl.Controls.Add(p);
-            foreach (Control ctrl in panelControl.Controls)
-            {
-                if (ctrl != p)
-                    ctrl.Dispose();
-            }
-            p.Show();
+           
         }
 
         private void MenuItemLichSu_Click(object sender, EventArgs e)
@@ -223,6 +207,81 @@ namespace TTN_QLKhachSan.UI
                 Form1 dn = new Form1();
                 dn.Show();
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FormHome_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void FormHome_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Escape)
+            {
+                MenuItemLogOut_Click(sender, e);
+            }
+        }
+
+        private void dSPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDSPhong p = new FormDSPhong() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.FormBorderStyle = FormBorderStyle.None;
+            this.panelControl.Controls.Add(p);
+            foreach (Control ctrl in panelControl.Controls)
+            {
+                if (ctrl != p)
+                    ctrl.Dispose();
+            }
+            p.Show();
+        }
+
+        private void loạiPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLPhong p = new FormLPhong() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.FormBorderStyle = FormBorderStyle.None;
+            this.panelControl.Controls.Add(p);
+            foreach (Control ctrl in panelControl.Controls)
+            {
+                if (ctrl != p)
+                    ctrl.Dispose();
+            }
+            p.Show();
+        }
+
+        private void thiếtBịTheoPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quảnLýThiếtBịToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormThietBii p = new FormThietBii() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.FormBorderStyle = FormBorderStyle.None;
+            this.panelControl.Controls.Add(p);
+            foreach (Control ctrl in panelControl.Controls)
+            {
+                if (ctrl != p)
+                    ctrl.Dispose();
+            }
+            p.Show();
+        }
+
+        private void thiếtBịTheoPhòngToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmThietBiTheoPhong p = new FrmThietBiTheoPhong() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.FormBorderStyle = FormBorderStyle.None;
+            this.panelControl.Controls.Add(p);
+            foreach (Control ctrl in panelControl.Controls)
+            {
+                if (ctrl != p)
+                    ctrl.Dispose();
+            }
+            p.Show();
         }
     }
 }

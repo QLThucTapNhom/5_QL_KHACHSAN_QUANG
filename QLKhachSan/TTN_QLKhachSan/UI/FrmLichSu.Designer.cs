@@ -47,19 +47,24 @@
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox1.Location = new System.Drawing.Point(13, 0);
+            this.groupBox1.Location = new System.Drawing.Point(17, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(809, 376);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1079, 463);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lịch sử thuê phòng";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 159);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 196);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(773, 195);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(1031, 240);
             this.dataGridView1.TabIndex = 1;
             // 
             // groupBox2
@@ -70,18 +75,21 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Location = new System.Drawing.Point(17, 20);
+            this.groupBox2.Location = new System.Drawing.Point(23, 25);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(773, 123);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(1031, 151);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
             // radioButtonyear
             // 
             this.radioButtonyear.AutoSize = true;
-            this.radioButtonyear.Location = new System.Drawing.Point(645, 78);
+            this.radioButtonyear.Location = new System.Drawing.Point(860, 96);
+            this.radioButtonyear.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonyear.Name = "radioButtonyear";
-            this.radioButtonyear.Size = new System.Drawing.Size(57, 23);
+            this.radioButtonyear.Size = new System.Drawing.Size(68, 26);
             this.radioButtonyear.TabIndex = 5;
             this.radioButtonyear.TabStop = true;
             this.radioButtonyear.Text = "Năm";
@@ -91,9 +99,10 @@
             // radioButtonmonth
             // 
             this.radioButtonmonth.AutoSize = true;
-            this.radioButtonmonth.Location = new System.Drawing.Point(429, 80);
+            this.radioButtonmonth.Location = new System.Drawing.Point(572, 98);
+            this.radioButtonmonth.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonmonth.Name = "radioButtonmonth";
-            this.radioButtonmonth.Size = new System.Drawing.Size(98, 23);
+            this.radioButtonmonth.Size = new System.Drawing.Size(122, 26);
             this.radioButtonmonth.TabIndex = 4;
             this.radioButtonmonth.TabStop = true;
             this.radioButtonmonth.Text = "Tháng/Năm";
@@ -103,9 +112,10 @@
             // radioButtonday
             // 
             this.radioButtonday.AutoSize = true;
-            this.radioButtonday.Location = new System.Drawing.Point(199, 80);
+            this.radioButtonday.Location = new System.Drawing.Point(265, 98);
+            this.radioButtonday.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonday.Name = "radioButtonday";
-            this.radioButtonday.Size = new System.Drawing.Size(135, 23);
+            this.radioButtonday.Size = new System.Drawing.Size(169, 26);
             this.radioButtonday.TabIndex = 3;
             this.radioButtonday.TabStop = true;
             this.radioButtonday.Text = "Ngày/Tháng/Năm";
@@ -115,39 +125,44 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 80);
+            this.label2.Location = new System.Drawing.Point(20, 98);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 19);
+            this.label2.Size = new System.Drawing.Size(138, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "Thống Kê Theo:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 31);
+            this.label1.Location = new System.Drawing.Point(20, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 19);
+            this.label1.Size = new System.Drawing.Size(91, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Thời Gian";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.CustomFormat = "M/d/yyyy";
+            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(102, 25);
+            this.dateTimePicker1.Location = new System.Drawing.Point(136, 31);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(115, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(152, 30);
             this.dateTimePicker1.TabIndex = 0;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged_1);
             // 
             // FrmLichSu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 401);
+            this.ClientSize = new System.Drawing.Size(1112, 494);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmLichSu";
             this.Text = "FrmLichSu";
+            this.Load += new System.EventHandler(this.FrmLichSu_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);

@@ -1,6 +1,6 @@
 ﻿namespace TTN_QLKhachSan.UI
 {
-    partial class FrmThietBi
+    partial class FrmThietBiTheoPhong
     {
         /// <summary>
         /// Required designer variable.
@@ -100,7 +100,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(381, 41);
+            this.label7.Location = new System.Drawing.Point(377, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(27, 19);
             this.label7.TabIndex = 8;
@@ -108,6 +108,7 @@
             // 
             // cbbTTtb
             // 
+            this.cbbTTtb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbTTtb.FormattingEnabled = true;
             this.cbbTTtb.Items.AddRange(new object[] {
             "Tốt",
@@ -124,7 +125,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 26);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Xóa";
+            this.button1.Text = "Xóa TB";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -189,9 +190,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(578, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 19);
+            this.label3.Size = new System.Drawing.Size(56, 19);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Dịch Vụ";
+            this.label3.Text = "Thiết Bị";
             // 
             // label2
             // 
@@ -204,9 +205,11 @@
             // 
             // dgvDichVu
             // 
+            this.dgvDichVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDichVu.Location = new System.Drawing.Point(431, 93);
             this.dgvDichVu.Name = "dgvDichVu";
+            this.dgvDichVu.ReadOnly = true;
             this.dgvDichVu.Size = new System.Drawing.Size(359, 159);
             this.dgvDichVu.TabIndex = 8;
             // 
@@ -215,6 +218,7 @@
             this.dgvThongTin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThongTin.Location = new System.Drawing.Point(12, 93);
             this.dgvThongTin.Name = "dgvThongTin";
+            this.dgvThongTin.ReadOnly = true;
             this.dgvThongTin.Size = new System.Drawing.Size(359, 159);
             this.dgvThongTin.TabIndex = 7;
             // 
@@ -230,6 +234,8 @@
             // 
             // cbbMaPhong
             // 
+            this.cbbMaPhong.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbbMaPhong.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbMaPhong.FormattingEnabled = true;
             this.cbbMaPhong.Location = new System.Drawing.Point(146, 15);
             this.cbbMaPhong.Name = "cbbMaPhong";
@@ -246,13 +252,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Phòng";
             // 
-            // FrmThietBi
+            // FrmThietBiTheoPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 401);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FrmThietBi";
+            this.Name = "FrmThietBiTheoPhong";
             this.Text = "FrmThietBi";
             this.Load += new System.EventHandler(this.FrmThietBi_Load);
             this.groupBox1.ResumeLayout(false);

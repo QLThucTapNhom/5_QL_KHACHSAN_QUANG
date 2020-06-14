@@ -85,7 +85,6 @@ D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhac
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
-D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBi.resources
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
@@ -141,30 +140,202 @@ D:\Hoc ky 6\tt nhóm\Nhom\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debu
 D:\Hoc ky 6\tt nhóm\Nhom\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
 D:\Hoc ky 6\tt nhóm\Nhom\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
 D:\Hoc ky 6\tt nhóm\Nhom\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
-<<<<<<< HEAD
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csprojAssemblyReference.cache
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Form1.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Properties.Resources.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormBCDoanhThu.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormDSPhong.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormHome.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDsHoaDon.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDSPDangSD.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmKhachHang.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmLichSu.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBi.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.GenerateResource.cache
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
-D:\0904\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
-=======
->>>>>>> 93fe350f3f55a0477b97b47ab5a0b0f7db97fdda
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csprojAssemblyReference.cache
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Form1.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Properties.Resources.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormBCDoanhThu.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormDSPhong.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormHome.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDsHoaDon.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDSPDangSD.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmKhachHang.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmLichSu.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBi.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.GenerateResource.cache
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
+D:\GITHUB\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csprojAssemblyReference.cache
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Form1.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Properties.Resources.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormBCDoanhThu.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormDSPhong.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormHome.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDsHoaDon.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDSPDangSD.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmKhachHang.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmLichSu.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBi.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.GenerateResource.cache
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
+D:\GITHUB\KS\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csprojAssemblyReference.cache
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Form1.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Properties.Resources.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormBCDoanhThu.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormDSPhong.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormHome.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDsHoaDon.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDSPDangSD.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmKhachHang.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmLichSu.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBi.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.GenerateResource.cache
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
+D:\HDD\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csprojAssemblyReference.cache
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Form1.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Properties.Resources.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormBCDoanhThu.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormDSPhong.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormHome.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDsHoaDon.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDSPDangSD.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmKhachHang.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmLichSu.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBi.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.GenerateResource.cache
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
+D:\1022\5_QL_KHACHSAN_QUANG-master (1)\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csprojAssemblyReference.cache
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Form1.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Properties.Resources.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormBCDoanhThu.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormDSPhong.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormHome.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDsHoaDon.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDSPDangSD.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmKhachHang.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmLichSu.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBi.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.GenerateResource.cache
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
+C:\Users\Dell E7450\Desktop\TTCSSDL_xxx\5_QL_KHACHSAN_QUANG-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csprojAssemblyReference.cache
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Form1.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Properties.Resources.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormBCDoanhThu.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormDSPhong.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormHome.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDsHoaDon.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDSPDangSD.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmKhachHang.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmLichSu.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBi.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
+C:\Users\Admin\Downloads\TTCSDL-master\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csprojAssemblyReference.cache
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Form1.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Properties.Resources.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormBCDoanhThu.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormDSPhong.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormHome.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDsHoaDon.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDSPDangSD.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmKhachHang.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmLichSu.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.GenerateResource.cache
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormLPhong.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormThietBii.resources
+D:\githubttcsdl\TTCSDL\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBiTheoPhong.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe.config
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.exe
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\bin\Debug\TTN_QLKhachSan.pdb
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Form1.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.Properties.Resources.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormBCDoanhThu.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormDSPhong.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormHome.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormLPhong.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormThietBii.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDsHoaDon.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmDSPDangSD.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmKhachHang.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmLichSu.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBiTheoPhong.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
+C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
+D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormLPhong.resources
+D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormThietBii.resources
+D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBiTheoPhong.resources

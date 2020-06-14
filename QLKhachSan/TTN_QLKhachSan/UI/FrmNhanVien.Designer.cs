@@ -40,12 +40,14 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbbMaNV = new System.Windows.Forms.ComboBox();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.cbbChucVu = new System.Windows.Forms.ComboBox();
             this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtCMT = new System.Windows.Forms.TextBox();
+            this.txtTenNV = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,9 +56,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbbMaNV = new System.Windows.Forms.ComboBox();
-            this.txtTenNV = new System.Windows.Forms.TextBox();
-
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -83,10 +82,10 @@
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Location = new System.Drawing.Point(8, 281);
             this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.ReadOnly = true;
             this.dgvNhanVien.Size = new System.Drawing.Size(793, 104);
             this.dgvNhanVien.TabIndex = 7;
-            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvNhanVien_CellClick);
-            this.dgvNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvNhanVien_CellContentClick);
+            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
             // groupBox4
             // 
@@ -103,7 +102,7 @@
             // btnLammoi
             // 
             this.btnLammoi.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnLammoi.Location = new System.Drawing.Point(170, 25);
+            this.btnLammoi.Location = new System.Drawing.Point(163, 25);
             this.btnLammoi.Name = "btnLammoi";
             this.btnLammoi.Size = new System.Drawing.Size(89, 32);
             this.btnLammoi.TabIndex = 3;
@@ -158,15 +157,15 @@
             // cbbtimnv
             // 
             this.cbbtimnv.FormattingEnabled = true;
-            this.cbbtimnv.Location = new System.Drawing.Point(170, 14);
+            this.cbbtimnv.Location = new System.Drawing.Point(170, 15);
             this.cbbtimnv.Name = "cbbtimnv";
-            this.cbbtimnv.Size = new System.Drawing.Size(444, 27);
-            this.cbbtimnv.TabIndex = 3;
+            this.cbbtimnv.Size = new System.Drawing.Size(425, 27);
+            this.cbbtimnv.TabIndex = 20;
             // 
             // btnTimKiem
             // 
             this.btnTimKiem.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnTimKiem.Location = new System.Drawing.Point(634, 14);
+            this.btnTimKiem.Location = new System.Drawing.Point(634, 17);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(109, 26);
             this.btnTimKiem.TabIndex = 2;
@@ -185,7 +184,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtTenNV);
             this.groupBox2.Controls.Add(this.cbbMaNV);
             this.groupBox2.Controls.Add(this.dtpNgaySinh);
             this.groupBox2.Controls.Add(this.cbbChucVu);
@@ -193,6 +191,7 @@
             this.groupBox2.Controls.Add(this.txtDiaChi);
             this.groupBox2.Controls.Add(this.txtSDT);
             this.groupBox2.Controls.Add(this.txtCMT);
+            this.groupBox2.Controls.Add(this.txtTenNV);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
@@ -207,6 +206,19 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
+            // cbbMaNV
+            // 
+            this.cbbMaNV.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbbMaNV.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbMaNV.FormattingEnabled = true;
+            this.cbbMaNV.Location = new System.Drawing.Point(90, 17);
+            this.cbbMaNV.MaxLength = 12;
+            this.cbbMaNV.Name = "cbbMaNV";
+            this.cbbMaNV.Size = new System.Drawing.Size(169, 27);
+            this.cbbMaNV.TabIndex = 19;
+            this.cbbMaNV.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbbMaNV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbbMaNV_KeyPress);
+            // 
             // dtpNgaySinh
             // 
             this.dtpNgaySinh.CustomFormat = "dd-MM-yyyy";
@@ -215,9 +227,11 @@
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(169, 26);
             this.dtpNgaySinh.TabIndex = 18;
+            this.dtpNgaySinh.ValueChanged += new System.EventHandler(this.dtpNgaySinh_ValueChanged);
             // 
             // cbbChucVu
             // 
+            this.cbbChucVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbChucVu.FormattingEnabled = true;
             this.cbbChucVu.Items.AddRange(new object[] {
             "Quản Lý",
@@ -229,6 +243,7 @@
             // 
             // cbbGioiTinh
             // 
+            this.cbbGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbGioiTinh.FormattingEnabled = true;
             this.cbbGioiTinh.Items.AddRange(new object[] {
             "Nam",
@@ -248,16 +263,28 @@
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(620, 18);
+            this.txtSDT.MaxLength = 12;
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(169, 26);
             this.txtSDT.TabIndex = 14;
+            this.txtSDT.TextChanged += new System.EventHandler(this.txtSDT_TextChanged);
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // txtCMT
             // 
             this.txtCMT.Location = new System.Drawing.Point(370, 58);
+            this.txtCMT.MaxLength = 12;
             this.txtCMT.Name = "txtCMT";
             this.txtCMT.Size = new System.Drawing.Size(169, 26);
             this.txtCMT.TabIndex = 13;
+            this.txtCMT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMT_KeyPress);
+            // 
+            // txtTenNV
+            // 
+            this.txtTenNV.Location = new System.Drawing.Point(90, 58);
+            this.txtTenNV.Name = "txtTenNV";
+            this.txtTenNV.Size = new System.Drawing.Size(169, 26);
+            this.txtTenNV.TabIndex = 12;
             // 
             // label9
             // 
@@ -331,22 +358,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Mã NV";
             // 
-            // cbbMaNV
-            // 
-            this.cbbMaNV.FormattingEnabled = true;
-            this.cbbMaNV.Location = new System.Drawing.Point(90, 14);
-            this.cbbMaNV.Name = "cbbMaNV";
-            this.cbbMaNV.Size = new System.Drawing.Size(169, 27);
-            this.cbbMaNV.TabIndex = 20;
-            this.cbbMaNV.SelectedIndexChanged += new System.EventHandler(this.cbbMaNV_SelectedIndexChanged);
-            // 
-            // txtTenNV
-            // 
-            this.txtTenNV.Location = new System.Drawing.Point(90, 58);
-            this.txtTenNV.Name = "txtTenNV";
-            this.txtTenNV.Size = new System.Drawing.Size(169, 26);
-            this.txtTenNV.TabIndex = 21;
-            // 
             // FrmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,6 +396,7 @@
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtCMT;
+        private System.Windows.Forms.TextBox txtTenNV;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -394,9 +406,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLammoi;
-        private System.Windows.Forms.ComboBox cbbtimnv;
         private System.Windows.Forms.ComboBox cbbMaNV;
-        private System.Windows.Forms.TextBox txtTenNV;
-
+        private System.Windows.Forms.ComboBox cbbtimnv;
     }
 }

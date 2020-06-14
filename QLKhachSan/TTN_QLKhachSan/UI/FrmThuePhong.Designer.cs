@@ -31,11 +31,13 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvThuePhong = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dtpNgayThue = new System.Windows.Forms.DateTimePicker();
+            this.txtDatCoc = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.comboBoxcmt = new System.Windows.Forms.ComboBox();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnThuePhong = new System.Windows.Forms.Button();
-            this.dtpNgayThue = new System.Windows.Forms.DateTimePicker();
             this.cbbMaPhong = new System.Windows.Forms.ComboBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtTenKh = new System.Windows.Forms.TextBox();
@@ -48,6 +50,10 @@
             this.dgvDsPhongTrong = new System.Windows.Forms.DataGridView();
             this.cbbLoaiPhong = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.lbmanv = new System.Windows.Forms.Label();
+            this.lbnamenv = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuePhong)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -57,6 +63,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.lbmanv);
+            this.groupBox1.Controls.Add(this.lbnamenv);
+            this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.dgvThuePhong);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
@@ -69,20 +79,24 @@
             // 
             // dgvThuePhong
             // 
+            this.dgvThuePhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvThuePhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvThuePhong.Location = new System.Drawing.Point(15, 275);
+            this.dgvThuePhong.Location = new System.Drawing.Point(15, 310);
             this.dgvThuePhong.Name = "dgvThuePhong";
-            this.dgvThuePhong.Size = new System.Drawing.Size(778, 122);
+            this.dgvThuePhong.ReadOnly = true;
+            this.dgvThuePhong.Size = new System.Drawing.Size(778, 87);
             this.dgvThuePhong.TabIndex = 3;
             this.dgvThuePhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThuePhong_CellContentClick);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.dtpNgayThue);
+            this.groupBox3.Controls.Add(this.txtDatCoc);
+            this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.comboBoxcmt);
             this.groupBox3.Controls.Add(this.txtMaKH);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.btnThuePhong);
-            this.groupBox3.Controls.Add(this.dtpNgayThue);
             this.groupBox3.Controls.Add(this.cbbMaPhong);
             this.groupBox3.Controls.Add(this.txtSDT);
             this.groupBox3.Controls.Add(this.txtTenKh);
@@ -93,15 +107,45 @@
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Location = new System.Drawing.Point(431, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(362, 257);
+            this.groupBox3.Size = new System.Drawing.Size(362, 292);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Phiếu Thuê Phòng";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // dtpNgayThue
+            // 
+            this.dtpNgayThue.CustomFormat = "dd-MM-yyyy";
+            this.dtpNgayThue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayThue.Location = new System.Drawing.Point(148, 187);
+            this.dtpNgayThue.Name = "dtpNgayThue";
+            this.dtpNgayThue.Size = new System.Drawing.Size(195, 26);
+            this.dtpNgayThue.TabIndex = 19;
+            // 
+            // txtDatCoc
+            // 
+            this.txtDatCoc.Location = new System.Drawing.Point(148, 219);
+            this.txtDatCoc.Name = "txtDatCoc";
+            this.txtDatCoc.Size = new System.Drawing.Size(195, 26);
+            this.txtDatCoc.TabIndex = 18;
+            this.txtDatCoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDatCoc_KeyPress);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(15, 224);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 19);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Đặt Cọc";
             // 
             // comboBoxcmt
             // 
+            this.comboBoxcmt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBoxcmt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxcmt.FormattingEnabled = true;
             this.comboBoxcmt.Location = new System.Drawing.Point(148, 25);
+            this.comboBoxcmt.MaxLength = 12;
             this.comboBoxcmt.Name = "comboBoxcmt";
             this.comboBoxcmt.Size = new System.Drawing.Size(195, 27);
             this.comboBoxcmt.TabIndex = 16;
@@ -109,8 +153,11 @@
             // 
             // txtMaKH
             // 
+            this.txtMaKH.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtMaKH.Location = new System.Drawing.Point(148, 87);
+            this.txtMaKH.MaxLength = 1;
             this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.ReadOnly = true;
             this.txtMaKH.Size = new System.Drawing.Size(195, 26);
             this.txtMaKH.TabIndex = 15;
             // 
@@ -127,7 +174,7 @@
             // 
             this.btnThuePhong.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThuePhong.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnThuePhong.Location = new System.Drawing.Point(20, 218);
+            this.btnThuePhong.Location = new System.Drawing.Point(20, 249);
             this.btnThuePhong.Name = "btnThuePhong";
             this.btnThuePhong.Size = new System.Drawing.Size(323, 33);
             this.btnThuePhong.TabIndex = 12;
@@ -135,17 +182,11 @@
             this.btnThuePhong.UseVisualStyleBackColor = true;
             this.btnThuePhong.Click += new System.EventHandler(this.btnThuePhong_Click);
             // 
-            // dtpNgayThue
-            // 
-            this.dtpNgayThue.CustomFormat = "dd MM yyyy hh:mm:ss tt";
-            this.dtpNgayThue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayThue.Location = new System.Drawing.Point(148, 185);
-            this.dtpNgayThue.Name = "dtpNgayThue";
-            this.dtpNgayThue.Size = new System.Drawing.Size(195, 26);
-            this.dtpNgayThue.TabIndex = 11;
-            // 
             // cbbMaPhong
             // 
+            this.cbbMaPhong.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbbMaPhong.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbMaPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbMaPhong.FormattingEnabled = true;
             this.cbbMaPhong.Location = new System.Drawing.Point(148, 152);
             this.cbbMaPhong.Name = "cbbMaPhong";
@@ -155,15 +196,19 @@
             // 
             // txtSDT
             // 
+            this.txtSDT.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtSDT.Location = new System.Drawing.Point(148, 120);
             this.txtSDT.Name = "txtSDT";
+            this.txtSDT.ReadOnly = true;
             this.txtSDT.Size = new System.Drawing.Size(195, 26);
             this.txtSDT.TabIndex = 9;
             // 
             // txtTenKh
             // 
+            this.txtTenKh.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtTenKh.Location = new System.Drawing.Point(148, 56);
             this.txtTenKh.Name = "txtTenKh";
+            this.txtTenKh.ReadOnly = true;
             this.txtTenKh.Size = new System.Drawing.Size(195, 26);
             this.txtTenKh.TabIndex = 7;
             // 
@@ -219,22 +264,27 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(15, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(373, 257);
+            this.groupBox2.Size = new System.Drawing.Size(373, 245);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh Sách Phòng Còn Trống";
             // 
             // dgvDsPhongTrong
             // 
+            this.dgvDsPhongTrong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDsPhongTrong.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvDsPhongTrong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDsPhongTrong.Location = new System.Drawing.Point(3, 61);
             this.dgvDsPhongTrong.Name = "dgvDsPhongTrong";
-            this.dgvDsPhongTrong.Size = new System.Drawing.Size(365, 190);
+            this.dgvDsPhongTrong.ReadOnly = true;
+            this.dgvDsPhongTrong.Size = new System.Drawing.Size(365, 178);
             this.dgvDsPhongTrong.TabIndex = 0;
             // 
             // cbbLoaiPhong
             // 
+            this.cbbLoaiPhong.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cbbLoaiPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbLoaiPhong.ForeColor = System.Drawing.SystemColors.MenuText;
             this.cbbLoaiPhong.FormattingEnabled = true;
             this.cbbLoaiPhong.Location = new System.Drawing.Point(215, 23);
             this.cbbLoaiPhong.Name = "cbbLoaiPhong";
@@ -251,6 +301,46 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Loại Phòng/Người";
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(146, 269);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(15, 19);
+            this.label20.TabIndex = 62;
+            this.label20.Text = "-";
+            // 
+            // lbmanv
+            // 
+            this.lbmanv.AutoSize = true;
+            this.lbmanv.Location = new System.Drawing.Point(123, 269);
+            this.lbmanv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbmanv.Name = "lbmanv";
+            this.lbmanv.Size = new System.Drawing.Size(27, 19);
+            this.lbmanv.TabIndex = 61;
+            this.lbmanv.Text = "ma";
+            // 
+            // lbnamenv
+            // 
+            this.lbnamenv.AutoSize = true;
+            this.lbnamenv.Location = new System.Drawing.Point(160, 269);
+            this.lbnamenv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbnamenv.Name = "lbnamenv";
+            this.lbnamenv.Size = new System.Drawing.Size(66, 19);
+            this.lbnamenv.TabIndex = 60;
+            this.lbnamenv.Text = "lbnamenv";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(50, 269);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(76, 19);
+            this.label18.TabIndex = 59;
+            this.label18.Text = "Nhân Viên:";
+            // 
             // FrmThuePhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +351,7 @@
             this.Text = "FrmThuePhong";
             this.Load += new System.EventHandler(this.FrmThuePhong_Load);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuePhong)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -278,7 +369,6 @@
         private System.Windows.Forms.DataGridView dgvThuePhong;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnThuePhong;
-        private System.Windows.Forms.DateTimePicker dtpNgayThue;
         private System.Windows.Forms.ComboBox cbbMaPhong;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -293,5 +383,12 @@
         private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtTenKh;
+        private System.Windows.Forms.TextBox txtDatCoc;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dtpNgayThue;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lbmanv;
+        private System.Windows.Forms.Label lbnamenv;
+        private System.Windows.Forms.Label label18;
     }
 }

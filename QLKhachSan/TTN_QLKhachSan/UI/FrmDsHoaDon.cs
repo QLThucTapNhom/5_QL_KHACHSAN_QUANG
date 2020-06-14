@@ -63,7 +63,7 @@ namespace TTN_QLKhachSan.UI
 
         private void FrmDsHoaDon_Load(object sender, EventArgs e)
         {
-
+            radioButtonday.Checked = true;
         }
     }
 }

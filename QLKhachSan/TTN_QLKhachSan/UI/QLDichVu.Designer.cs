@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbbDV = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.txtten = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbbDV = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVDichVu)).BeginInit();
@@ -63,6 +63,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin các dịch vụ được cung cấp";
             // 
+            // cbbDV
+            // 
+            this.cbbDV.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbbDV.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbDV.FormattingEnabled = true;
+            this.cbbDV.Location = new System.Drawing.Point(103, 31);
+            this.cbbDV.Name = "cbbDV";
+            this.cbbDV.Size = new System.Drawing.Size(125, 27);
+            this.cbbDV.TabIndex = 11;
+            this.cbbDV.SelectedIndexChanged += new System.EventHandler(this.cbbDV_SelectedIndexChanged);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnThem);
@@ -73,11 +84,12 @@
             this.groupBox2.Size = new System.Drawing.Size(770, 54);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnThem
             // 
             this.btnThem.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnThem.Location = new System.Drawing.Point(162, 18);
+            this.btnThem.Location = new System.Drawing.Point(208, 16);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 30);
             this.btnThem.TabIndex = 6;
@@ -88,7 +100,7 @@
             // btnSua
             // 
             this.btnSua.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSua.Location = new System.Drawing.Point(335, 18);
+            this.btnSua.Location = new System.Drawing.Point(340, 16);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 30);
             this.btnSua.TabIndex = 8;
@@ -99,7 +111,7 @@
             // btnXoa
             // 
             this.btnXoa.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnXoa.Location = new System.Drawing.Point(515, 18);
+            this.btnXoa.Location = new System.Drawing.Point(476, 16);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 30);
             this.btnXoa.TabIndex = 7;
@@ -109,11 +121,14 @@
             // 
             // dGVDichVu
             // 
+            this.dGVDichVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dGVDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVDichVu.Location = new System.Drawing.Point(17, 168);
+            this.dGVDichVu.Location = new System.Drawing.Point(17, 149);
             this.dGVDichVu.Name = "dGVDichVu";
-            this.dGVDichVu.Size = new System.Drawing.Size(775, 202);
+            this.dGVDichVu.ReadOnly = true;
+            this.dGVDichVu.Size = new System.Drawing.Size(775, 221);
             this.dGVDichVu.TabIndex = 9;
+            this.dGVDichVu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVDichVu_CellClick);
             this.dGVDichVu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVDichVu_CellContentClick);
             // 
             // txtgia
@@ -123,6 +138,7 @@
             this.txtgia.Name = "txtgia";
             this.txtgia.Size = new System.Drawing.Size(134, 25);
             this.txtgia.TabIndex = 5;
+            this.txtgia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtgia_KeyPress);
             // 
             // label3
             // 
@@ -135,7 +151,7 @@
             // 
             // txtten
             // 
-            this.txtten.Location = new System.Drawing.Point(405, 33);
+            this.txtten.Location = new System.Drawing.Point(397, 33);
             this.txtten.Multiline = true;
             this.txtten.Name = "txtten";
             this.txtten.Size = new System.Drawing.Size(134, 25);
@@ -144,7 +160,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(296, 33);
+            this.label2.Location = new System.Drawing.Point(288, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 19);
             this.label2.TabIndex = 2;
@@ -158,15 +174,6 @@
             this.label1.Size = new System.Drawing.Size(84, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Dịch Vụ";
-            // 
-            // cbbDV
-            // 
-            this.cbbDV.FormattingEnabled = true;
-            this.cbbDV.Location = new System.Drawing.Point(114, 33);
-            this.cbbDV.Name = "cbbDV";
-            this.cbbDV.Size = new System.Drawing.Size(128, 27);
-            this.cbbDV.TabIndex = 11;
-            this.cbbDV.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // QLDichVu
             // 
@@ -196,7 +203,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtten;
         private System.Windows.Forms.Label label2;
-
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox cbbDV;
