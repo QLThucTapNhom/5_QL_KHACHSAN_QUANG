@@ -34,7 +34,7 @@ namespace TTN_QLKhachSan.UI
                                             + "where sd.MaDV = dv.MaDV  and sd.MaPhieu = pt.MaPhieu and pt.MaPhieu = hd.MaPhieu "
                                             + " and day(NgayLap) = N'" + day + "' and month(NgayLap) = N'" + month + "' and year(NgayLap) = N'" + year + "' "
                                             + " group by dv.TenDV,sd.MaDV order by  sum(sd.SoLuong) desc");
-            database.loadDataGridView(dgvphong, "select pt.MaPhong, p.TenPhong, COUNT(pt.MaPhieu) as N' Số lần được thuê' , sum(hd.TienPhong) as N'Thành Tiền' "
+            database.loadDataGridView(dgvphong, "select pt.MaPhong, p.TenPhong, COUNT(pt.MaPhieu) as N' Số lần được thuê' , sum(DonGia) as N'Thành Tiền' "
                                             + "from LOAIPHONG lp, PHONG p, PHIEUTHUEPHONG pt, HOADON hd  " 
                                             + "where lp.MaLoaiPhong = p.MaLoaiPhong and p.MaPhong = pt.MaPhong and pt.MaPhieu = hd.MaPhieu " 
                                             + "and  day(NgayLap) = N'" + day + "' and month(NgayLap) = N'" + month + "' and year(NgayLap) = N'" + year + "' " 
@@ -64,7 +64,7 @@ namespace TTN_QLKhachSan.UI
                                             + "where sd.MaDV = dv.MaDV  and sd.MaPhieu = pt.MaPhieu and pt.MaPhieu = hd.MaPhieu "
                                             + " and month(NgayLap) = N'" + month + "' and year(NgayLap) = N'" + year + "' "
                                             + " group by dv.TenDV,sd.MaDV order by  sum(sd.SoLuong) desc");
-            database.loadDataGridView(dgvphong, "select pt.MaPhong, p.TenPhong, COUNT(pt.MaPhieu) as N' Số lần được thuê' , sum(hd.TienPhong) as N'Thành Tiền' "
+            database.loadDataGridView(dgvphong, "select pt.MaPhong, p.TenPhong, COUNT(pt.MaPhieu) as N' Số lần được thuê' , sum(DonGia) as N'Thành Tiền' "
                                             + "from LOAIPHONG lp, PHONG p, PHIEUTHUEPHONG pt, HOADON hd  "
                                             + "where lp.MaLoaiPhong = p.MaLoaiPhong and p.MaPhong = pt.MaPhong and pt.MaPhieu = hd.MaPhieu "
                                             + "and month(NgayLap) = N'" + month + "' and year(NgayLap) = N'" + year + "' "
@@ -93,7 +93,7 @@ namespace TTN_QLKhachSan.UI
                                             + "where sd.MaDV = dv.MaDV  and sd.MaPhieu = pt.MaPhieu and pt.MaPhieu = hd.MaPhieu "
                                             + "and year(NgayLap) = N'" + year + "' "
                                             + " group by dv.TenDV,sd.MaDV order by  sum(sd.SoLuong) desc");
-            database.loadDataGridView(dgvphong, "select pt.MaPhong, p.TenPhong, COUNT(pt.MaPhieu) as N' Số lần được thuê' , sum(hd.TienPhong) as N'Thành Tiền' "
+            database.loadDataGridView(dgvphong, "select pt.MaPhong, p.TenPhong, COUNT(pt.MaPhieu) as N' Số lần được thuê' , sum(DonGia) as N'Thành Tiền' "
                                             + "from LOAIPHONG lp, PHONG p, PHIEUTHUEPHONG pt, HOADON hd  "
                                             + "where lp.MaLoaiPhong = p.MaLoaiPhong and p.MaPhong = pt.MaPhong and pt.MaPhieu = hd.MaPhieu "
                                             + "and year(NgayLap) = N'" + year + "' "

@@ -85,6 +85,7 @@ D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhac
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmNhanVien.resources
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmPhongDangThue.resources
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThanhToan.resources
+D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBi.resources
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThuePhong.resources
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLDichVu.resources
 D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.QLNguoiDung.resources
@@ -336,6 +337,3 @@ C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj
 C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.exe
 C:\Users\Admin\Desktop\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.pdb
-D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormLPhong.resources
-D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FormThietBii.resources
-D:\GIThub1008\5_QL_KHACHSAN_QUANG\QLKhachSan\TTN_QLKhachSan\obj\Debug\TTN_QLKhachSan.UI.FrmThietBiTheoPhong.resources
